@@ -1,6 +1,6 @@
-# Web app template
+# Personal website: claucia.com
 
-This is a web app template with [Parcel.js](https://parceljs.org/) suitable for most of my vanilla JavaScript projects.
+This is the source code of my personal website available at [claucia.com](https://claucia.com).
 
 ## Running the app for development
 

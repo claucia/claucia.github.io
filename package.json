@@ -1,13 +1,13 @@
 {
-  "name": "web-app-template",
-  "description": "Web app template with Parse.js for vanilla JavaScript projects",
+  "name": "claucia.github.io",
+  "description": "This is the project for my personal website",
   "author": {
     "name": "Claucia Cambruzzi",
     "url": "https://claucia.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/claucia/web-app-template"
+    "url": "https://github.com/claucia/claucia.github.io"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.1.1",
@@ -21,6 +21,6 @@
     "start": "parcel --open chrome",
     "prebuild": "rm -rf dist",
     "build": "parcel build",
-    "deploy": "npm run build -- --public-url /web-app-template && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   }
 }
