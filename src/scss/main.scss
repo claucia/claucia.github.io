@@ -1,3 +1,99 @@
-h1 {
-  color: #222;
+@import "config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  .header-section {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 1rem;
+    font-size: 1.2rem;
+
+    .logo {
+      border: 1px solid red;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: ". icon-logo-text . .";
+
+      .icon-logo-text {
+        color: mediumblue;
+        grid-area: icon-logo-text;
+      }
+    }
+    .navigation-bar {
+      border: 1px solid red;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      list-style-type: none;
+
+      > li a {
+        text-decoration: none;
+      }
+    }
+  }
+  .main-section {
+    background-color: lightcoral;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+  }
+  .home,
+  .portfolio,
+  .curriculum,
+  .contact {
+    min-height: 100vh;
+  }
+  .home {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+  .social {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: center;
+
+    .social-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      line-height: 40px;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .footer-section {
+    background-color: lightgreen;
+  }
+}
+
+@media only screen and (max-width: $small-devices) {
+  * {
+    color: red;
+  }
+}
+
+@media only screen and (min-width: $small-devices) and (max-width: $desktop-devices) {
+  * {
+    color: green;
+  }
+}
+@media only screen and (min-width: $desktop-devices) {
+  * {
+    color: blue;
+  }
 }
