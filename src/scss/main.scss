@@ -1,6 +1,5 @@
 @import "helpers/config";
 
-@import "layout/breakpoints";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/forms";
@@ -10,3 +9,5 @@
 @import "pages/portfolio";
 @import "pages/curriculum";
 @import "pages/contact";
+
+@import "layout/breakpoints";

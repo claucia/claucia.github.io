@@ -1,4 +1,4 @@
-const hamburger = document.querySelector(".hamburguer");
+const hamburger = document.querySelector(".hamburger");
 const navigationMenu = document.querySelector(".navigation-menu");
 const navigationLink = document.querySelectorAll(".navigation-link");
 
