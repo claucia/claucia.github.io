@@ -29,7 +29,5 @@
     "build": "webpack --mode production",
     "deploy": "npm run build && gh-pages -d dist"
   },
-  "dependencies": {
-    "webmanifest-loader": "^0.3.0"
-  }
+  "dependencies": {}
 }
