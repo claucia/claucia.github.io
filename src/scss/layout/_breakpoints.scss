@@ -11,11 +11,11 @@
   .header {
     .navigation-bar {
       .navigation-menu {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
         visibility: hidden;
         flex-direction: column;
         justify-content: center;
@@ -24,6 +24,7 @@
         background-color: pink;
         opacity: 0;
         transition: all 0.5s ease-in-out;
+        z-index: -1000;
         .navigation-item {
           margin: 0;
           padding: 0.5rem;
@@ -31,11 +32,13 @@
         &.active {
           visibility: visible;
           opacity: 1;
+          z-index: 1000;
         }
       }
       .hamburger {
         display: block;
         cursor: pointer;
+        z-index: 1001;
 
         &.active .bar:nth-child(2) {
           opacity: 0;
