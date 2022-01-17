@@ -4,6 +4,9 @@
   * {
     color: red;
   }
+  body.active-menu {
+    overflow: hidden;
+  }
 
   .header {
     .navigation-bar {
