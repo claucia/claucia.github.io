@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 768px) {
   * {
-    color: red;
+    color: green;
   }
   //Header
   .header {
@@ -54,6 +54,37 @@
           }
           .bar:nth-child(3) {
             transform: translateY(-8px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+
+  // Curriculun
+  .curriculum {
+    .content {
+      .professional-experience {
+        > h1 {
+          padding: 0;
+        }
+
+        .summary {
+          > p {
+            margin-bottom: 0.5rem;
+          }
+        }
+
+        .timeline .timeline-block .timeline-content {
+          > ul li,
+          date {
+            margin-bottom: 0.4rem;
+          }
+        }
+      }
+      .education {
+        .education-block {
+          > h3 {
+            margin-top: 1rem;
           }
         }
       }

@@ -1,0 +1,92 @@
+.curriculum {
+  .content {
+    width: 70%;
+    .professional-experience,
+    .education,
+    .certifications {
+      > h1 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #475569;
+        margin: 0 0 1rem 0;
+        padding: 1rem 0;
+      }
+    }
+
+    .professional-experience {
+      .summary {
+        > p {
+          margin-bottom: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+
+      .timeline {
+        &:before {
+          content: "";
+          position: absolute;
+          width: 0.1rem;
+          height: 100%;
+          background-color: green;
+          z-index: 1;
+          left: 13rem;
+        }
+
+        .marker {
+          position: absolute;
+          width: 1rem;
+          height: 1rem;
+          left: 16%;
+          margin-top: 6px;
+          z-index: 99;
+        }
+
+        .timeline-block .timeline-content {
+          display: block;
+          margin-bottom: 2rem;
+          padding-left: 2.5rem;
+          line-height: 1.5rem;
+
+          > h3 {
+            margin-top: 2rem;
+          }
+
+          > ul li,
+          .date {
+            margin-bottom: 0.8rem;
+          }
+
+          > ul {
+            padding: 1rem 0 0 1rem;
+            margin-left: 1rem;
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .education {
+      .education-block {
+        > h3 {
+          margin-top: 1rem;
+        }
+
+        .course-date {
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+
+    .certifications {
+      .certifications-block {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        > a img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
