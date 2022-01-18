@@ -1,58 +1,60 @@
 .curriculum {
   .content {
-    width: 70%;
-    .professional-experience,
-    .education,
-    .certifications {
-      > h1 {
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: #475569;
-        margin: 0 0 1rem 0;
-        padding: 1rem 0;
+    > h2 {
+      margin: 2rem 0;
+    }
+
+    .summary {
+      > p {
+        margin-bottom: 0.5rem;
+        line-height: 1.5rem;
       }
     }
 
-    .professional-experience {
-      .summary {
-        > p {
-          margin-bottom: 1rem;
-          line-height: 1.5rem;
-        }
-      }
+    .timeline {
+      border-left: 2px solid green;
+      margin-left: 20px;
+      margin-bottom: 0.5rem;
 
-      .timeline-block .timeline-content {
+      &:after {
+        content: " ";
+        border-bottom: 2px solid green;
+        width: 20px;
+        display: block;
+        position: relative;
+        left: -10px;
+      }
+    }
+
+    .timeline-item {
+      position: relative;
+      margin: 0 0 1.5rem 2rem;
+      .marker {
+        position: absolute;
+        left: -54px;
+        background-color: purple;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+      }
+      .timeline-item-content {
         > h3 {
-          margin-top: 2rem;
+          margin-bottom: 0.5rem;
         }
 
-        > ul li,
-        .date {
-          margin-bottom: 0.8rem;
-        }
-      }
-    }
-
-    .education {
-      .education-block {
-        > h3 {
-          margin-top: 1rem;
+        > ul {
+          margin-top: 0.5rem;
         }
 
-        .course-date {
-          margin-bottom: 0.8rem;
+        > ul li {
+          margin-bottom: 0.5rem;
+          margin-left: 2rem;
         }
-      }
-    }
 
-    .certifications {
-      .certifications-block {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-
-        > a img {
-          width: 100%;
+        img.certification-badge {
+          max-width: 100px;
+          max-height: 100px;
+          margin-top: 0.5rem;
         }
       }
     }
