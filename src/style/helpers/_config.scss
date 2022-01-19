@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
 @import url("https://cdn.lineicons.com/3.0/lineicons.css");
+
+// Variables
+$primary-font-family: "Karla", sans-serif;
+
 // CSS reset
 * {
   margin: 0;
@@ -9,7 +13,7 @@
 }
 
 html {
-  font-family: "Karla", sans-serif;
+  font-family: $primary-font-family;
   font-size: 1.2rem;
 }
 

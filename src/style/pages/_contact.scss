@@ -1,0 +1,41 @@
+.contact .content {
+  > form {
+    width: 50%;
+    margin: 0 auto;
+
+    .message-sent {
+      display: none;
+    }
+
+    .contact-description {
+      margin: 1rem 0;
+    }
+
+    .form-text-boxes {
+      width: 100%;
+    }
+    .form-label {
+      display: none;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.2rem;
+      border-radius: 0.5rem;
+
+      &::placeholder {
+        font-size: 0.8rem;
+        font-family: $primary-font-family;
+      }
+    }
+
+    .form-text-boxes {
+      > button {
+        padding: 0.8rem;
+        margin: 0.2rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}

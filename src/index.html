@@ -197,6 +197,7 @@
       <section class="contact">
         <div class="content">
           <h1><a name="contact">Contact</a></h1>
+
           <form action="javascript:void(0);">
             <div class="message-sent">
               <h2>Your message has been sent.</h2>
@@ -207,42 +208,44 @@
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro cumque dolorum nam id? Quae, tempore?
               </p>
             </div>
-            <div>
-              <label class="form-label screen-reader-text" for="form-name">Your Name</label>
-              <input class="form-input" id="form-name" type="text" name="name" placeholder="Name" required />
-            </div>
-            <div>
-              <label class="form-label screen-reader-text" for="email"> Your Email</label>
-              <input class="form-input" id="form-email" type="email" name="email" placeholder="Email" required />
-            </div>
-            <div>
-              <label class="form-label screen-reader-text" for="form-text" style="display: none !important"
-                >Your website</label
-              >
-              <input
-                class="form-input"
-                id="form-website"
-                type="text"
-                name="website"
-                placeholder="Website"
-                style="display: none !important"
-                tabindex="-1"
-                autocomplete="off"
-              />
-            </div>
-            <div>
-              <label class="form-label screen-reader-text" for="form-text"> Your message</label>
-              <textarea
-                class="form-input"
-                id="form-text"
-                name="text"
-                rows="10"
-                placeholder="Message"
-                required
-              ></textarea>
-            </div>
-            <div>
+            <div class="form-text-boxes">
+              <div>
+                <label class="form-label screen-reader-text" for="form-name">Your Name</label>
+                <input class="form-input" id="form-name" type="text" name="name" placeholder="Name" required />
+              </div>
+              <div>
+                <label class="form-label screen-reader-text" for="email"> Your Email</label>
+                <input class="form-input" id="form-email" type="email" name="email" placeholder="Email" required />
+              </div>
+              <div>
+                <label class="form-label screen-reader-text" for="form-text" style="display: none !important"
+                  >Your website</label
+                >
+                <input
+                  class="form-input"
+                  id="form-website"
+                  type="text"
+                  name="website"
+                  placeholder="Website"
+                  style="display: none !important"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+              </div>
+              <div>
+                <label class="form-label screen-reader-text" for="form-text"> Your message</label>
+                <textarea
+                  class="form-input"
+                  id="form-text"
+                  name="text"
+                  rows="10"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <!-- <div class="send-message-button"> -->
               <button type="submit">Send message</button>
+              <!-- </div> -->
             </div>
           </form>
         </div>
