@@ -104,12 +104,10 @@
       margin: 0 auto;
       width: 100%;
 
-      .form-text-boxes {
-        > button {
-          padding: 0.8rem;
-          margin: 0.2rem;
-          border-radius: 0.5rem;
-        }
+      button[type="submit"] {
+        padding: 0.8rem;
+        margin: 0.2rem;
+        border-radius: 0.5rem;
       }
     }
   }

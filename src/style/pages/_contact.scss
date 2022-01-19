@@ -30,11 +30,31 @@
       }
     }
 
-    .form-text-boxes {
-      > button {
-        padding: 0.8rem;
-        margin: 0.2rem;
-        border-radius: 0.5rem;
+    button[type="submit"] {
+      padding: 0.8rem;
+      margin: 0.2rem;
+      border-radius: 0.5rem;
+
+      @keyframes loader {
+        0% {
+          transform: rotateZ(0);
+        }
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+
+      &.submitting {
+        cursor: wait;
+        font-size: 0;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background: transparent;
+        border: 2px solid deeppink;
+        border-right: 2px solid firebrick;
+        animation: loader 0.4s linear infinite;
       }
     }
   }

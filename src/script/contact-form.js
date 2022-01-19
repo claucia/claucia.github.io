@@ -8,11 +8,6 @@ function loaded() {
 }
 document.addEventListener("DOMContentLoaded", loaded, false);
 
-function validEmail(email) {
-  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-  return re.test(email);
-}
-
 function validateHuman(honeypot) {
   if (honeypot) {
     return true;
@@ -72,40 +67,31 @@ function handleFormSubmit(event) {
   var data = getFormData(form); // get the values submitted in the form
 
   if (validateHuman(data.website)) {
-    //if form is filled, form will not be submitted
+    // If field is filled, form will not be submitted
     messageSent(form);
     return false;
   }
 
-  if (data.email && !validEmail(data.email)) {
-    // if email is not valid show error
-    var invalidEmail = form.querySelector(".email-invalid");
-    if (invalidEmail) {
-      invalidEmail.style.display = "block";
-      return false;
-    }
-  } else {
-    disableAllButtons(form);
-    var url =
-      "https://script.google.com/macros/s/AKfycbyRpvybj9Gk3z11LTivHknJoK3SkEXIO-a0bC7vZL26ZkHsqpb0bMlSNPQXQsVC_7U7Ag/exec";
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", url);
-    // xhr.withCredentials = true;
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function () {
-      // console.log(xhr.status, xhr.statusText);
-      // console.log(xhr.responseText);
-      messageSent(form);
-      return;
-    };
-    // url encode form data for sending as post data
-    var encoded = Object.keys(data)
-      .map(function (k) {
-        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-      })
-      .join("&");
-    xhr.send(encoded);
-  }
+  disableAllButtons(form);
+  var url =
+    "https://script.google.com/macros/s/AKfycbyRpvybj9Gk3z11LTivHknJoK3SkEXIO-a0bC7vZL26ZkHsqpb0bMlSNPQXQsVC_7U7Ag/exec";
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", url);
+  // xhr.withCredentials = true;
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.onreadystatechange = function () {
+    // console.log(xhr.status, xhr.statusText);
+    // console.log(xhr.responseText);
+    messageSent(form);
+    return;
+  };
+  // url encode form data for sending as post data
+  var encoded = Object.keys(data)
+    .map(function (k) {
+      return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+    })
+    .join("&");
+  xhr.send(encoded);
 }
 
 function disableAllButtons(form) {
@@ -119,7 +105,7 @@ function disableAllButtons(form) {
 
 function messageSent(form) {
   form.reset();
-  var formElements = form.querySelectorAll(".form__group");
+  var formElements = form.querySelectorAll(".form-item");
   for (var i = 0; i < formElements.length; i++) {
     formElements[i].style.display = "none"; // hide form elements
   }
