@@ -12,6 +12,7 @@
 }
 
 .header {
+  // Positon absolute may be the cause of navigation bar shrinking
   position: absolute;
   width: 100%;
   border-bottom: 1px solid #e2e8f0;

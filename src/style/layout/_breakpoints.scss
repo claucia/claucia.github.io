@@ -1,8 +1,20 @@
 @media screen and(max-width: 1275px) and (min-width: 767px) {
+  * {
+    color: blue;
+  }
   // Contact
   .contact .content {
     > form {
       width: 60%;
+    }
+  }
+
+  // Footer
+  .footer .content .footer-items {
+    font-size: 1rem;
+
+    .social .social-item {
+      font-size: 1.2;
     }
   }
 }
@@ -104,11 +116,25 @@
       margin: 0 auto;
       width: 100%;
 
+      .form-input {
+        margin: 0.2rem 0;
+      }
+
       button[type="submit"] {
         padding: 0.8rem;
-        margin: 0.2rem;
+        margin: 0.2rem 0;
         border-radius: 0.5rem;
       }
+    }
+  }
+
+  // Footer
+  .footer .content .footer-items {
+    .social .social-item {
+      font-size: 1.2rem;
+    }
+    .navigation-menu .navigation-item {
+      padding: 0 0.5rem;
     }
   }
 }
