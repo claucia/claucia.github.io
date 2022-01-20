@@ -79,35 +79,14 @@
     }
   }
 
+  // Hero
+  .hero-home .hero-content .hero-title {
+    font-size: 3rem;
+  }
+
   // Curriculun
-  .curriculum {
-    .content {
-      .professional-experience {
-        > h1 {
-          padding: 0;
-        }
-
-        .summary {
-          > p {
-            margin-bottom: 0.5rem;
-          }
-        }
-
-        .timeline .timeline-block .timeline-content {
-          > ul li,
-          date {
-            margin-bottom: 0.4rem;
-          }
-        }
-      }
-      .education {
-        .education-block {
-          > h3 {
-            margin-top: 1rem;
-          }
-        }
-      }
-    }
+  .curriculum .content .timeline-item .timeline-item-content > ul li {
+    margin-left: 1rem;
   }
 
   // Contact
@@ -130,11 +109,17 @@
 
   // Footer
   .footer .content .footer-items {
-    .social .social-item {
-      font-size: 1.2rem;
+    .social {
+      margin-bottom: 0.5rem;
+      .social-item {
+        font-size: 1.2rem;
+      }
     }
-    .navigation-menu .navigation-item {
-      padding: 0 0.5rem;
+    .navigation-menu {
+      margin: 0.2rem 0;
+      .navigation-item {
+        padding: 0 0.5rem;
+      }
     }
   }
 }
