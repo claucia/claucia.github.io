@@ -10,15 +10,13 @@
 
     .message-sent {
       display: none;
+      text-align: center;
     }
 
     .contact-description {
       margin: 1rem 0;
     }
 
-    .form-text-boxes {
-      width: 100%;
-    }
     .form-label {
       display: none;
     }
@@ -28,10 +26,12 @@
       padding: 0.8rem;
       margin: 0.2rem 0;
       border-radius: 0.5rem;
+      border-color: $tertiary-color;
 
       &::placeholder {
         font-size: 0.8rem;
         font-family: $primary-font-family;
+        color: $tertiary-color;
       }
     }
 
@@ -39,6 +39,8 @@
       padding: 0.8rem;
       margin: 0.2rem 0;
       border-radius: 0.5rem;
+      border-color: $tertiary-color;
+      color: $secondary-color;
 
       @keyframes loader {
         0% {

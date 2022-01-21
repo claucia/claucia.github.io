@@ -4,19 +4,43 @@
 
 // Variables
 $primary-font-family: "Karla", sans-serif;
+$background: #19223e;
+$primary-color: #c5d5ff;
+$secondary-color: #ffaced;
+$tertiary-color: #a5ffd6;
 
 // CSS reset
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: $background;
 }
 
 html {
   font-family: $primary-font-family;
   font-size: 1.2rem;
+  color: $primary-color;
 }
 
 a {
   text-decoration: none;
+}
+
+// Common styles
+.header,
+.hero-home,
+.portfolio,
+.curriculum,
+.contact,
+.footer {
+  > .content {
+    margin: 0 auto;
+    max-width: 1264px;
+    padding: 0 1.5rem;
+
+    > h2 {
+      color: $secondary-color;
+    }
+  }
 }

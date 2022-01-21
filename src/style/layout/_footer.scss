@@ -1,6 +1,4 @@
 .footer {
-  background-color: lightgreen;
-
   .content .footer-items {
     margin: 1rem 0;
     display: flex;
@@ -15,6 +13,9 @@
       .social-item {
         margin: 0 0.5rem;
         font-size: 1.5rem;
+        .social-link {
+          color: $secondary-color;
+        }
       }
     }
 
@@ -27,8 +28,12 @@
         list-style: none;
         padding: 0 1.5rem;
 
+        .navigation-link {
+          color: $primary-color;
+        }
+
         .navigation-link:hover {
-          color: blue;
+          color: $secondary-color;
         }
       }
     }
