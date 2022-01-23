@@ -29,8 +29,10 @@
     .timeline-item {
       position: relative;
       margin: 0 0 1.5rem 2rem;
-      .marker {
+      &:before {
+        content: " ";
         position: absolute;
+        display: block;
         left: -52px;
         background-color: $secondary-color;
         width: 25px;
