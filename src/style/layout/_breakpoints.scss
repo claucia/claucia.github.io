@@ -1,7 +1,4 @@
 @media screen and(max-width: 1275px) and (min-width: 767px) {
-  * {
-    color: blue;
-  }
   // Contact
   .contact .content {
     > form {
@@ -20,9 +17,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  * {
-    color: green;
-  }
   //Header
   .header {
     .navigation-bar {
@@ -38,7 +32,6 @@
         justify-content: start;
         text-align: center;
         padding: 3rem;
-        background-color: pink;
         opacity: 0;
         transition: all 0.5s ease-in-out;
         z-index: -1000;
