@@ -44,3 +44,26 @@ a {
     }
   }
 }
+
+// Button back to top
+body {
+  display: grid;
+  grid-template-columns: auto 0px;
+}
+.top {
+  --offset: 50px;
+  position: sticky;
+  bottom: 1.2rem;
+  margin-right: 1rem;
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  width: 2rem;
+  text-align: center;
+  padding: 0.3rem 0;
+  color: $primary-color;
+
+  &:hover {
+    border: 1px solid $tertiary-color;
+    border-radius: 0.5rem;
+  }
+}
