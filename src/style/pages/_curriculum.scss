@@ -48,8 +48,12 @@
         }
       }
 
-      > p {
+      > p a {
         color: $tertiary-color;
+
+        &:hover {
+          font-weight: 500;
+        }
       }
 
       > ul {
