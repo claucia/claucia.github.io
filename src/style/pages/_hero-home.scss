@@ -2,10 +2,7 @@
   display: grid;
   grid-template-rows: repeat(4, auto);
 }
-.hero-home,
-.portfolio,
-.curriculum,
-.contact {
+.hero-home {
   min-height: 100vh;
 }
 .hero-home {
