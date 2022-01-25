@@ -4,10 +4,10 @@
 
 // Variables
 $primary-font-family: "Karla", sans-serif;
-$background: #19223e;
-$primary-color: #c5d5ff;
-$secondary-color: #ffaced;
-$tertiary-color: #a5ffd6;
+$background: #fff;
+$primary-color: #14bdad;
+$secondary-color: #6c757d;
+$tertiary-color: #eef3f6;
 
 // CSS reset
 * {
@@ -20,7 +20,7 @@ $tertiary-color: #a5ffd6;
 html {
   font-family: $primary-font-family;
   font-size: 1.2rem;
-  color: $primary-color;
+  color: #000;
 }
 
 a {
@@ -40,7 +40,7 @@ a {
     padding: 0 1.5rem;
 
     > h2 {
-      color: $secondary-color;
+      color: $primary-color;
     }
   }
 }
@@ -63,7 +63,7 @@ body {
   color: $primary-color;
 
   &:hover {
-    border: 1px solid $tertiary-color;
+    border: 1px solid $secondary-color;
     border-radius: 0.5rem;
   }
 }

@@ -12,13 +12,13 @@
     }
 
     .timeline {
-      border-left: 2px solid $tertiary-color;
+      border-left: 2px solid $secondary-color;
       margin-left: 20px;
       margin-bottom: 0.5rem;
 
       &:after {
         content: " ";
-        border-bottom: 2px solid $tertiary-color;
+        border-bottom: 2px solid $secondary-color;
         width: 20px;
         display: block;
         position: relative;
@@ -34,25 +34,26 @@
         position: absolute;
         display: block;
         left: -52px;
-        background-color: $secondary-color;
+        background-color: $primary-color;
         width: 25px;
         height: 25px;
         border-radius: 100%;
       }
 
       > h3 {
-        color: $tertiary-color;
+        color: $primary-color;
         > span {
           text-transform: uppercase;
           font-size: 0.7rem;
+          color: $secondary-color;
         }
       }
 
       > p a {
-        color: $primary-color;
+        color: #000;
 
         &:hover {
-          font-weight: 500;
+          color: $secondary-color;
         }
       }
 

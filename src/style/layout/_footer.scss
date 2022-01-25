@@ -14,7 +14,10 @@
         margin: 0 0.5rem;
         font-size: 1.5rem;
         .social-link {
-          color: $secondary-color;
+          color: $primary-color;
+          &:hover {
+            color: $secondary-color;
+          }
         }
       }
     }
@@ -29,11 +32,11 @@
         padding: 0 1.5rem;
 
         .navigation-link {
-          color: $primary-color;
+          color: $secondary-color;
         }
 
         .navigation-link:hover {
-          color: $secondary-color;
+          color: $primary-color;
         }
       }
     }
