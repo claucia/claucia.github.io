@@ -32,6 +32,21 @@
       grid-column: span 2;
       border: 5px solid aqua;
     }
+
+    &:nth-child(5n-4):nth-last-of-type(1) {
+      grid-column: span 6;
+      border: 5px dashed firebrick;
+    }
+
+    &:nth-child(5n-2):nth-last-of-type(1) {
+      grid-column: span 6;
+      border: 5px dashed springgreen;
+    }
+
+    &:nth-child(5n-1):nth-last-of-type(1) {
+      grid-column: span 4;
+      border: 5px dashed dodgerblue;
+    }
   }
 
   .screenshot {
