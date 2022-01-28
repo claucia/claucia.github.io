@@ -48,16 +48,14 @@
     transition: all 0.3s ease-in-out;
     background-color: $primary-color;
   }
-}
 
-@media only screen and (max-width: 768px) {
-  .header {
+  @media only screen and (max-width: 768px) {
     .navigation-menu {
       position: fixed;
-      top: 0;
       left: 0;
-      width: 100%;
-      height: 120%;
+      right: 0;
+      top: 0;
+      bottom: 0;
       overflow: hidden;
       visibility: hidden;
       flex-direction: column;
@@ -65,8 +63,8 @@
       text-align: center;
       padding: 3rem;
       opacity: 0;
-
-      z-index: -1000;
+      background-color: $tertiary-color;
+      transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
     }
 
     .navigation-item {
@@ -77,10 +75,12 @@
     .hamburger {
       display: block;
       cursor: pointer;
-      z-index: 1001;
+      z-index: 100;
     }
   }
+}
 
+@media only screen and (max-width: 768px) {
   body.active-menu {
     overflow: hidden;
 
@@ -88,9 +88,6 @@
       .navigation-menu {
         visibility: visible;
         opacity: 1;
-        z-index: 1000;
-        background-color: $tertiary-color;
-        transition: all 0.5s ease-in-out;
       }
 
       .bar {
