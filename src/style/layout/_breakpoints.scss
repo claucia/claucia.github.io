@@ -17,62 +17,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  //Header
-  .header {
-    .navigation-bar {
-      .navigation-menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 120%;
-        overflow: hidden;
-        visibility: hidden;
-        flex-direction: column;
-        justify-content: start;
-        text-align: center;
-        padding: 3rem;
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-        z-index: -1000;
-        .navigation-item {
-          margin: 0;
-          padding: 0.5rem;
-        }
-      }
-      .hamburger {
-        display: block;
-        cursor: pointer;
-        z-index: 1001;
-      }
-    }
-  }
-
-  body.active-menu {
-    overflow: hidden;
-    .header {
-      .navigation-bar {
-        .navigation-menu {
-          visibility: visible;
-          opacity: 1;
-          z-index: 1000;
-          background-color: $tertiary-color;
-        }
-        .hamburger {
-          .bar:nth-child(2) {
-            opacity: 0;
-          }
-          .bar:nth-child(1) {
-            transform: translateY(8px) rotate(45deg);
-          }
-          .bar:nth-child(3) {
-            transform: translateY(-8px) rotate(-45deg);
-          }
-        }
-      }
-    }
-  }
-
   // Hero
   .hero-home .hero-content .hero-title {
     font-size: 3rem;
