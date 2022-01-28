@@ -29,11 +29,6 @@
       background-color: $tertiary-color;
       border: 0.1rem solid $secondary-color;
 
-      &:focus-visible {
-        font-family: $primary-font-family;
-        font-size: 0.8rem;
-      }
-
       &::placeholder {
         font-size: 0.8rem;
         font-family: $primary-font-family;
@@ -49,9 +44,9 @@
       border: 0.1rem solid $secondary-color;
       color: $primary-color;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
 
       &:hover {
-        transform: translateY(-2px);
         background-color: $primary-color;
         color: $tertiary-color;
       }
