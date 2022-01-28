@@ -1,10 +1,3 @@
-.layout {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: auto 0px;
-}
-
-// CSS reset
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +8,15 @@ html {
   font-family: $primary-font-family;
   font-size: 1.2rem;
   color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color;
 }
 
 a {
@@ -34,25 +36,24 @@ p {
   line-height: 1.5rem;
 }
 
-.header,
-.hero-home,
-.portfolio,
-.curriculum,
-.contact,
-.footer {
-  > .content {
-    margin: 0 auto;
-    max-width: 1264px;
-    padding: 0 1.5rem;
-
-    > h2 {
-      color: $primary-color;
-    }
-  }
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 0px;
 }
 
-// Button scroll to top
-.top {
+.content {
+  margin: 0 auto;
+  max-width: 1264px;
+  padding: 0 1.5rem;
+}
+
+.main-section {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+}
+
+.scroll-to-top {
   --offset: 50px;
   position: sticky;
   bottom: 1.2rem;
@@ -63,7 +64,6 @@ p {
   text-align: center;
   padding: 0.3rem 0;
   color: $primary-color;
-
   &:hover {
     border: 1px solid $secondary-color;
     border-radius: 0.5rem;

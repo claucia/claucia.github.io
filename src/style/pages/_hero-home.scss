@@ -1,45 +1,45 @@
-.main-section {
-  display: grid;
-  grid-template-rows: repeat(4, auto);
-}
 .hero-home {
   min-height: 100vh;
-}
-.hero-home {
   display: grid;
   align-content: center;
   justify-content: center;
 
   .hero-content {
     text-align: center;
+  }
 
+  .hero-title {
+    font-size: 3.2rem;
+    color: $primary-color;
+  }
+  .hero-description {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .social {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: $primary-color;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
     .hero-title {
-      font-size: 3.2rem;
-      color: $primary-color;
-    }
-    .hero-description {
-      font-size: 1.2rem;
-      padding: 1rem;
-    }
-
-    .social {
-      display: grid;
-      grid-template-columns: repeat(2, auto);
-      align-items: center;
-      justify-content: center;
-
-      .social-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.6rem;
-        padding: 1rem;
-        text-decoration: none;
-        color: $primary-color;
-        &:hover {
-          color: $secondary-color;
-        }
-      }
+      font-size: 3rem;
     }
   }
 }
