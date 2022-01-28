@@ -49,7 +49,7 @@
     font-size: 0.7rem;
   }
 
-  @media screen and(max-width: 1275px) and (min-width: 767px) {
+  @media screen and(max-width: $large-devices) and (min-width: $small-devices) {
     .footer-items {
       font-size: 1rem;
       color: red;
@@ -60,16 +60,18 @@
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: $small-devices) {
     .social {
       margin-bottom: 0.5rem;
     }
     .social-item {
       font-size: 1.2rem;
     }
+
     .navigation-menu {
       margin: 0.2rem 0;
     }
+
     .navigation-item {
       padding: 0 0.5rem;
     }

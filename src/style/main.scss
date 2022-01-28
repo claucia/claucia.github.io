@@ -1,4 +1,5 @@
 @import "helpers/config";
+@import "layout/breakpoints";
 
 @import "layout/layout";
 @import "layout/header";
@@ -8,5 +9,3 @@
 @import "pages/portfolio";
 @import "pages/curriculum";
 @import "pages/contact";
-
-@import "layout/breakpoints";
