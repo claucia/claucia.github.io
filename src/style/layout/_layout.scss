@@ -19,9 +19,21 @@ html {
 
 a {
   text-decoration: none;
+  color: $secondary-color;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+  &:hover {
+    color: $primary-color;
+    // TODO: Review this border
+    // border-bottom: 1px solid $primary-color;
+  }
 }
 
-// Common styles
+p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
 .header,
 .hero-home,
 .portfolio,
