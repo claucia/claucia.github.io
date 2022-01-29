@@ -64,8 +64,5 @@ p {
   text-align: center;
   padding: 0.3rem 0;
   color: $primary-color;
-  &:hover {
-    border: 1px solid $secondary-color;
-    border-radius: 0.5rem;
-  }
+  font-size: 2rem;
 }
