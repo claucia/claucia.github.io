@@ -56,6 +56,8 @@
       right: 0;
       top: 0;
       bottom: 0;
+      height: 100%;
+      width: 100%;
       overflow: hidden;
       visibility: hidden;
       flex-direction: column;
@@ -65,6 +67,7 @@
       opacity: 0;
       background-color: $background;
       transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+      z-index: 1;
     }
 
     .navigation-item {
@@ -75,7 +78,7 @@
     .hamburger {
       display: block;
       cursor: pointer;
-      z-index: 100;
+      z-index: 2;
     }
   }
 }

@@ -7,6 +7,7 @@
   {{ range first 3 $portfolioItems.ByPublishDate.Reverse }}
   <div>
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    
     {{ if .Params.tags }}
     <div class="tag-group">
       {{ range .Params.tags }}
@@ -18,6 +19,7 @@
       {{end}}
     </div>
     {{end}}
+    
   </div>
   {{ end }} {{ if gt (len $portfolioItems) 3 }}
   <a href="/portfolio">Check my full portfolio</a>
