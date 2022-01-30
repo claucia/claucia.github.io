@@ -4,6 +4,20 @@ title: <claucia/>
 theme: nica
 copyright: 2022 © Claucia Cambruzzi
 
+params:
+  author: Claucia Cambruzzi
+  description: I am a front-end web development learner and this is my website.
+  social:
+    - identifier: github
+      url: http://example.org
+      pre: <i class="lni lni-github-original"></i>
+    - identifier: linkedin
+      url: http://example.org
+      pre: <i class="lni lni-linkedin-original"></i>
+  contact:
+    form:
+      url: https://script.google.com/macros/s/AKfycbyRpvybj9Gk3z11LTivHknJoK3SkEXIO-a0bC7vZL26ZkHsqpb0bMlSNPQXQsVC_7U7Ag/exec
+
 menu:
   main:
     - identifier: portfolio
@@ -21,22 +35,6 @@ menu:
       title: Contact
       url: /contact/
       weight: 30
-
-params:
-  social:
-    - identifier: github
-      url: http://example.org
-      pre: <i class="lni lni-github-original"></i>
-    - identifier: linkedin
-      url: http://example.org
-      pre: <i class="lni lni-linkedin-original"></i>
-  contact:
-    form:
-      url: https://script.google.com/macros/s/AKfycbyRpvybj9Gk3z11LTivHknJoK3SkEXIO-a0bC7vZL26ZkHsqpb0bMlSNPQXQsVC_7U7Ag/exec
-  home:
-    hero:
-      title: Claucia Cambruzzi
-      description: I am a front-end web development learner and this is my website.
 
 taxonomies:
   tag: tags

@@ -1,10 +1,10 @@
 {{ define "main" }}
 <div>
-  <h1>{{ .Site.Params.home.hero.title }}</h1>
-  <p>{{ .Site.Params.home.hero.description }}</p>
+  <h1>{{ .Site.Params.author }}</h1>
+  <p>{{ .Site.Params.description }}</p>
 
-  {{ $portfolioItems := (where .Site.RegularPages "Type" "portfolio") }} {{ range first 3
-  $portfolioItems.ByPublishDate.Reverse }}
+  {{ $portfolioItems := (where .Site.RegularPages "Type" "portfolio") }}
+  {{ range first 3 $portfolioItems.ByPublishDate.Reverse }}
   <div>
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     {{ if .Params.tags }}
@@ -23,4 +23,5 @@
   <a href="/portfolio">Check my full portfolio</a>
   {{ end }}
 </div>
+
 {{ end }}
