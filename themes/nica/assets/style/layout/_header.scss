@@ -52,21 +52,17 @@
   @media only screen and (max-width: 768px) {
     .navigation-menu {
       position: fixed;
-      left: 0;
-      right: 0;
-      top: 0;
+      left: 100%;
       bottom: 0;
       height: 100%;
       width: 100%;
       overflow: hidden;
-      visibility: hidden;
       flex-direction: column;
       justify-content: start;
       text-align: center;
       padding: 3rem;
-      opacity: 0;
       background-color: $background;
-      transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+      transition: left 0.5s ease-in-out;
       z-index: 1;
     }
 
@@ -89,8 +85,7 @@
 
     .header {
       .navigation-menu {
-        visibility: visible;
-        opacity: 1;
+        left: 0;
       }
 
       .bar {
