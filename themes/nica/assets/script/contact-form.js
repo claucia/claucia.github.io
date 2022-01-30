@@ -3,7 +3,7 @@ import * as params from "@params";
 function loaded() {
   //console.log("Contact form submission handler loaded successfully.");
   // bind to the submit event of our form
-  var forms = document.querySelectorAll("section.contact form");
+  var forms = document.querySelectorAll("main.page.contact form");
   for (var i = 0; i < forms.length; i++) {
     forms[i].addEventListener("submit", handleFormSubmit, false);
   }

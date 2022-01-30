@@ -23,25 +23,6 @@ menu:
       weight: 30
 
 params:
-  home:
-    hero:
-      title: Claucia Cambruzzi
-      description: I am a front-end web development learner and this is my website.
-
-  contact:
-    url: https://script.google.com/macros/s/AKfycbyRpvybj9Gk3z11LTivHknJoK3SkEXIO-a0bC7vZL26ZkHsqpb0bMlSNPQXQsVC_7U7Ag/exec
-    title: Get in touch
-    description: Fill out the form and I'll be in touch as soon as possible.
-    labels:
-      name: Your name
-      email: Your email
-      website: Your website
-      message: Your message
-    sent:
-      title: Your message has been sent.
-      description: I'll get back to you shortly.
-    button: Send message
-
   social:
     - identifier: github
       url: http://example.org
@@ -49,6 +30,13 @@ params:
     - identifier: linkedin
       url: http://example.org
       pre: <i class="lni lni-linkedin-original"></i>
+  contact:
+    form:
+      url: https://script.google.com/macros/s/AKfycbyRpvybj9Gk3z11LTivHknJoK3SkEXIO-a0bC7vZL26ZkHsqpb0bMlSNPQXQsVC_7U7Ag/exec
+  home:
+    hero:
+      title: Claucia Cambruzzi
+      description: I am a front-end web development learner and this is my website.
 
 taxonomies:
   tag: tags

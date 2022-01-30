@@ -1,11 +1,11 @@
 {{ define "main" }}
+
 <h1>{{ .Title }}</h1>
 
-{{ with .Site.Params.contact }}
+{{ with .Params.form }}
 <h2>{{ .title }}</h2>
 <form action="javascript:void(0);">
   <div class="message-sent">
-    <h2>{{ .sent.title }}</h2>
     <p>{{ .sent.description }}</p>
   </div>
   <div class="form-item contact-description">
@@ -53,7 +53,7 @@
     ></textarea>
   </div>
   <div class="form-item">
-    <button type="submit">{{ .button }}</button>
+    <button type="submit">{{ .labels.submit }}</button>
   </div>
 </form>
 {{ end }}
