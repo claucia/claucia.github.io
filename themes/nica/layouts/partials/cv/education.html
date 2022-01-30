@@ -1,0 +1,12 @@
+<div class="education">
+  <h2>{{ .title }}</h2>
+  <div class="timeline">
+    {{ range .content }}
+    <div class="timeline-item">
+      <h3>{{ .course }}{{ if .note }} <span>{{ .note }}</span>{{ end }}</h3>
+      <p>{{ if .url }}<a href="{{ .url }}" target="_blank">{{ .institution }}</a>{{ else }}{{ .institution }}{{ end }} - {{ .location }}</p>
+      <p>{{ .dates.start }} - {{ .dates.end }}</p>
+    </div>
+    {{ end }}
+  </div>
+</div>

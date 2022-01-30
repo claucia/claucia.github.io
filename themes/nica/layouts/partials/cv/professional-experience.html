@@ -1,0 +1,17 @@
+<div class="professional-experience">
+  <h2>{{ .title }}</h2>
+  <div class="timeline">
+    {{ range .content }}
+    <div class="timeline-item">
+      <h3>{{ .title }}{{ if .note }} <span>{{ .note }}</span>{{ end }}</h3>
+      <p>{{ if .company }}{{ .company }} - {{ end }}{{ .location }}</p>
+      <p>{{ .dates.start }} - {{ .dates.end }}</p>
+      <ul>
+        {{ range .description }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</div>

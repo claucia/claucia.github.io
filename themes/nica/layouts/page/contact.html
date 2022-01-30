@@ -1,0 +1,61 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ with .Site.Params.contact }}
+<h2>{{ .title }}</h2>
+<form action="javascript:void(0);">
+  <div class="message-sent">
+    <h2>{{ .sent.title }}</h2>
+    <p>{{ .sent.description }}</p>
+  </div>
+  <div class="form-item contact-description">
+    <p>{{ .description }}</p>
+  </div>
+  <div class="form-item">
+    <label class="form-label screen-reader-text" for="form-name">{{ .labels.name }}</label>
+    <input class="form-input" id="form-name" type="text" name="name" placeholder="{{ .labels.name }}" required />
+  </div>
+  <div class="form-item">
+    <label class="form-label screen-reader-text" for="form-email">{{ .labels.email }}</label>
+    <input
+      class="form-input"
+      id="form-email"
+      type="email"
+      name="email"
+      placeholder="{{ .labels.email }}"
+      required
+    />
+  </div>
+  <div class="form-item">
+    <label class="form-label screen-reader-text" for="form-website" style="display: none !important"
+      >{{ .labels.website }}</label
+    >
+    <input
+      class="form-input"
+      id="form-website"
+      type="text"
+      name="website"
+      placeholder="{{ .labels.website }}"
+      style="display: none !important"
+      tabindex="-1"
+      autocomplete="off"
+    />
+  </div>
+  <div class="form-item">
+    <label class="form-label screen-reader-text" for="form-message">{{ .labels.message }}</label>
+    <textarea
+      class="form-input"
+      id="form-message"
+      name="message"
+      rows="10"
+      placeholder="{{ .labels.message }}"
+      required
+    ></textarea>
+  </div>
+  <div class="form-item">
+    <button type="submit">{{ .button }}</button>
+  </div>
+</form>
+{{ end }}
+
+{{ end }}

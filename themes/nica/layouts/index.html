@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div>
+  <h1>{{ .Site.Params.home.hero.title }}</h1>
+  <p>{{ .Site.Params.home.hero.description }}</p>
+
+  {{ $portfolioItems := (where .Site.RegularPages "Type" "portfolio") }} {{ range first 3
+  $portfolioItems.ByPublishDate.Reverse }}
+  <div>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ if .Params.tags }}
+    <div class="tag-group">
+      {{ range .Params.tags }}
+      <div class="tag">
+        <span class="tag-text">
+          <a href="/tags/{{. | urlize }}">{{.}}</a>
+        </span>
+      </div>
+      {{end}}
+    </div>
+    {{end}}
+  </div>
+  {{ end }} {{ if gt (len $portfolioItems) 3 }}
+  <a href="/portfolio">Check my full portfolio</a>
+  {{ end }}
+</div>
+{{ end }}

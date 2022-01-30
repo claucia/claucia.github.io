@@ -1,0 +1,65 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: <claucia/>
+theme: nica
+copyright: 2022 © Claucia Cambruzzi
+
+menu:
+  main:
+    - identifier: portfolio
+      name: Portfolio
+      title: Portfolio
+      url: /portfolio/
+      weight: 10
+    - identifier: cv
+      name: CV
+      title: CV
+      url: /cv/
+      weight: 20
+    - identifier: contact
+      name: Contact
+      title: Contact
+      url: /contact/
+      weight: 30
+
+params:
+  home:
+    hero:
+      title: Claucia Cambruzzi
+      description: I am a front-end web development learner and this is my website.
+
+  contact:
+    url: https://script.google.com/macros/s/AKfycbyRpvybj9Gk3z11LTivHknJoK3SkEXIO-a0bC7vZL26ZkHsqpb0bMlSNPQXQsVC_7U7Ag/exec
+    title: Get in touch
+    description: Fill out the form and I'll be in touch as soon as possible.
+    labels:
+      name: Your name
+      email: Your email
+      website: Your website
+      message: Your message
+    sent:
+      title: Your message has been sent.
+      description: I'll get back to you shortly.
+    button: Send message
+
+  social:
+    - identifier: github
+      url: http://example.org
+      pre: <i class="lni lni-github-original"></i>
+    - identifier: linkedin
+      url: http://example.org
+      pre: <i class="lni lni-linkedin-original"></i>
+
+taxonomies:
+  tag: tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:    
+    noClasses: false # This requires a stylesheet for syntax highlighting
+                     # This can be used to generate one:
+                     # hugo gen chromastyles --style=monokai > syntax.css
+                     # Available styles: https://xyproto.github.io/splash/docs/
+                     # These also seem to work just fine: https://swapoff.org/chroma/playground/

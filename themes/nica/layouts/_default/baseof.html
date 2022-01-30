@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+  <body>
+    {{- partial "header/header.html" . -}}
+      
+      {{ $classes := slice }}
+      {{ $classes = $classes | append .Page.Kind }}
+      {{ $classes = $classes | append .Page.Type }}
+      
+      {{ if eq .Page.Kind "page" }}
+        {{ $classes = $classes | append (path.Base .Page.Permalink) }}
+      {{ end }}
+
+      {{ if .Page.Draft }}
+        {{ $classes = $classes | append "draft" }}
+      {{ end }}
+      
+    <main class='{{ delimit (uniq $classes) " " }}'>
+      <div class="content">
+      {{- block "main" . }}{{- end }}
+      </div>
+    </main>
+    {{- partial "footer/footer.html" . -}}
+    {{- partial "script.html" . -}}
+  </body>
+</html>

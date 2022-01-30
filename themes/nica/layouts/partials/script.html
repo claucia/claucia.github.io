@@ -1,0 +1,3 @@
+{{ $mainJs := resources.Get "script/main.js" | js.Build ( dict "params" (dict "contactFormUrl" .Site.Params.contact.url
+)) | minify | fingerprint }}
+<script src="{{ $mainJs.RelPermalink }}"></script>
