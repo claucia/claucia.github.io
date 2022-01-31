@@ -9,10 +9,10 @@ params:
   description: I am a front-end web development learner and this is my website.
   social:
     - identifier: github
-      url: http://example.org
+      url: https://github.com/claucia
       pre: <i class="lni lni-github-original"></i>
     - identifier: linkedin
-      url: http://example.org
+      url: https://www.linkedin.com/in/claucia/
       pre: <i class="lni lni-linkedin-original"></i>
   contact:
     form:

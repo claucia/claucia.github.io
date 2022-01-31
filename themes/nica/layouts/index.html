@@ -1,29 +1,16 @@
 {{ define "main" }}
-<div>
-  <h1>{{ .Site.Params.author }}</h1>
-  <p>{{ .Site.Params.description }}</p>
+<div class="hero-content">
+  <h1 class="hero-title">{{ .Site.Params.author }}</h1>
+  <p class="hero-description">{{ .Site.Params.description }}</p>
 
-  {{ $portfolioItems := (where .Site.RegularPages "Type" "portfolio") }}
-  {{ range first 3 $portfolioItems.ByPublishDate.Reverse }}
-  <div>
-    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    
-    {{ if .Params.tags }}
-    <div class="tag-group">
-      {{ range .Params.tags }}
-      <div class="tag">
-        <span class="tag-text">
-          <a href="/tags/{{. | urlize }}">{{.}}</a>
-        </span>
-      </div>
-      {{end}}
-    </div>
-    {{end}}
-    
+  <div class="social">
+  {{ range .Site.Params.social }}
+  <div class="social-item">
+    <a class="social-link" href="{{ .url }}" target="_blank"> {{ .pre | safeHTML }} </a>
   </div>
-  {{ end }} {{ if gt (len $portfolioItems) 3 }}
-  <a href="/portfolio">Check my full portfolio</a>
   {{ end }}
+  </div>
+
 </div>
 
 {{ end }}
