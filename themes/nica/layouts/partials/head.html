@@ -2,7 +2,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>{{ .Site.Title }}</title>
+  {{ $title := .Site.Title }}
+  {{ if not .Page.IsHome }}
+    {{ $title = (print $title " • " .Page.Title) }}
+  {{ end }}
+
+  <title>{{ $title }}</title>
 
   {{ $mainStyle := resources.Get "style/main.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $mainStyle.RelPermalink }}" />
