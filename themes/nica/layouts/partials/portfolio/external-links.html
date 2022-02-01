@@ -1,6 +1,10 @@
 {{ if . }} 
 <div class="external-links">
 	
+	{{ if .frontendMentor.url }}
+	<a href="{{ .frontendMentor.url }}" target="_blank">Frontend Mentor</a>
+	{{ end }}
+
   {{ if .github.url }}
 	<a href="{{ .github.url }}" target="_blank">View on GitHub</a>
 	{{ end }}
