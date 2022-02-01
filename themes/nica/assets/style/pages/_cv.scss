@@ -63,6 +63,20 @@
   }
 
   @media only screen and (max-width: $small-devices) {
+
+  .timeline {
+    margin-left: 10px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-left: 1.2rem;
+    &:before {
+      left: -36px;
+    }
+  }
+
+
     li {
       margin-left: 1rem;
     }
