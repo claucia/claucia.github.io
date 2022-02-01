@@ -6,7 +6,7 @@ tags:
  - sass
  - html
  - javascript
-external:
+externalLinks:
   github:
     url: http://example.org
   demo:
