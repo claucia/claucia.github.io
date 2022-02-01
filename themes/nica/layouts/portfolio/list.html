@@ -7,6 +7,8 @@
   {{- partial "portfolio/date.html" .Date -}}
   {{- partial "portfolio/tags.html" .Params.tags -}}
 </div>
+{{ else }}
+<p>{{ .Params.noContent }}</p>
 {{ end }}
 
 {{ end }}

@@ -8,11 +8,11 @@ tags:
   - javascript
   - frontend-mentor
 externalLinks:
-  github:
-    url: http://example.org
-  demo:
-    url: http://example.org
-  frontendMentor:
+  - title: GitHub
+    url: https://github.com/claucia/faq-accordion-card
+  - title: Live demo
+    url: https://claucia.com/faq-accordion-card/
+  - title: Frontend Mentor
     url: https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam
 ---
 
