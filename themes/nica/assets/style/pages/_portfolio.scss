@@ -1,3 +1,42 @@
+@mixin draft-badge {
+  content: "Draft";
+  color: $white;
+  background-color: #e70101;
+  border: 2px solid #e70101;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.6rem;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  position: relative;
+  top: -2px;
+}
+
+.section.portfolio {
+  
+  .card.draft {
+    h3:after {
+      @include draft-badge;
+    }
+  }
+
+  // TODO: Other styles
+
+}
+
+.page.portfolio {
+  
+  &.draft {
+    h1:after {
+      @include draft-badge;
+    }
+  }
+
+  // TODO: Other styles
+
+}
+
+
 .portfolio-gallery {
   width: 100%;
   display: grid;
@@ -82,19 +121,6 @@
 
     .tags {
       display: inline;
-    }
-  }
-
-  a.tag {
-    color: $primary-color;
-    border: 2px solid $primary-color;
-    padding: 5px 10px;
-    border-radius: 25px;
-    font-size: 0.7rem;
-
-    &:hover {
-      background-color: $primary-color;
-      color: $tertiary-color;
     }
   }
 

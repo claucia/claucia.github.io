@@ -1,11 +1,11 @@
-@import "helpers/config";
+@import "config";
 @import "layout/breakpoints";
 
 @import "layout/layout";
 @import "layout/header";
 @import "layout/footer";
 
-@import "pages/hero-home";
+@import "pages/home";
 @import "pages/portfolio";
 @import "pages/cv";
 @import "pages/contact";

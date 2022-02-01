@@ -1,0 +1,13 @@
+{{ if . }} 
+<div>
+	
+  {{ if .github.url }}
+	<a href="{{ .github.url }}" target="_blank">View on GitHub</a>
+	{{ end }}
+
+  {{ if .demo.url }}
+	<a href="{{ .demo.url }}" target="_blank">Live demo</a>
+	{{ end }}
+
+</div>
+{{ end }}

@@ -1,8 +1,8 @@
 .page.home {
-  min-height: 100vh;
   display: grid;
   align-content: center;
   justify-content: center;
+  grid-row: 2;
 
   .hero-content {
     text-align: center;
@@ -19,8 +19,7 @@
   }
 
   .social {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: flex;
     align-items: center;
     justify-content: center;
   }

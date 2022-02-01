@@ -39,7 +39,7 @@
     border: 2px solid $primary-color;
     color: $secondary-color;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     &:hover {
       background-color: $secondary-color;
       color: $primary-color;

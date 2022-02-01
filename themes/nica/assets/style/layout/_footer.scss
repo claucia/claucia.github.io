@@ -1,27 +1,26 @@
 .footer {
   grid-row-start: 3;
   grid-row-end: 4;
+  margin-top: 2rem;
 
   .footer-items {
-    margin: 1rem 0;
-    display: flex;
-    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: grid;
     align-items: center;
+    grid-gap: .7rem;
   }
 
   .social {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 0.5rem;
-  }
-
-  .social-item {
-    margin: 0 0.5rem;
-    font-size: 1.5rem;
+    justify-content: center;
   }
 
   .social-link {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
     color: $primary-color;
     &:hover {
       color: $secondary-color;
@@ -31,52 +30,26 @@
   .navigation-menu {
     display: flex;
     align-items: center;
-    margin: 0.5rem 0;
+    justify-content: center;
   }
 
   .navigation-item {
     list-style: none;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
 
   .navigation-link {
     color: $secondary-color;
-  }
-
-  .navigation-link:hover {
-    color: $primary-color;
+    &:hover {
+      color: $primary-color;
+    }
   }
 
   .copyright {
-    margin-top: 1rem;
     font-size: 0.7rem;
-  }
-
-  @media screen and(max-width: $large-devices) and (min-width: $small-devices) {
-    .footer-items {
-      font-size: 1rem;
-      color: red;
-    }
-
-    .social-item {
-      font-size: 1.2;
-    }
-  }
-
-  @media only screen and (max-width: $small-devices) {
-    .social {
-      margin-bottom: 0.5rem;
-    }
-    .social-item {
-      font-size: 1.2rem;
-    }
-
-    .navigation-menu {
-      margin: 0.2rem 0;
-    }
-
-    .navigation-item {
-      padding: 0 0.5rem;
+    text-align: center;
+    > p {
+      margin: 0;
     }
   }
 }

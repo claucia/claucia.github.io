@@ -2,15 +2,12 @@
 <div class="hero-content">
   <h1 class="hero-title">{{ .Site.Params.author }}</h1>
   <p class="hero-description">{{ .Site.Params.description }}</p>
-
   <div class="social">
-  {{ range .Site.Params.social }}
-  <div class="social-item">
-    <a class="social-link" href="{{ .url }}" target="_blank"> {{ .pre | safeHTML }} </a>
+    {{ range .Site.Params.social }}
+    <div class="social-item">
+      <a class="social-link" href="{{ .url }}" target="_blank"> {{ .pre | safeHTML }} </a>
+    </div>
+    {{ end }}
   </div>
-  {{ end }}
-  </div>
-
 </div>
-
 {{ end }}
