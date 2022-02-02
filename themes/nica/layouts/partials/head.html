@@ -6,11 +6,11 @@
   {{ if not .Page.IsHome }}
     {{ $title = (print $title " • " .Page.Title) }}
   {{ end }}
-
   <title>{{ $title }}</title>
+
+  <meta name="description" content="{{ .Site.Params.description }}" />
 
   {{ $mainStyle := resources.Get "style/main.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $mainStyle.RelPermalink }}" />
-
   <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
 </head>

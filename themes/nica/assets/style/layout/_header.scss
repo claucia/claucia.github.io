@@ -27,13 +27,24 @@
   }
 
   .navigation-link {
-    font-size: 1.6rem;
     font-weight: 400;
     color: $secondary-color;
-    
-
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
     &:hover {
       color: $primary-color;
+    }
+    &:after {
+      content: '';
+      display: block;
+      border-bottom: 2px solid $primary-color;
+      width: 0;
+      transition: width 0.3s ease-in-out;
+    }
+    &:hover:after {
+      width: 100%;
     }
   }
 
@@ -72,6 +83,7 @@
     .navigation-item {
       margin: 0;
       padding: 0.5rem;
+      font-size: 1.3rem;
     }
 
     .hamburger {

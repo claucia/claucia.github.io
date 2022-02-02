@@ -21,9 +21,9 @@
   .social-link {
     margin: 0 0.5rem;
     font-size: 1.2rem;
-    color: $primary-color;
+    color: $secondary-color;
     &:hover {
-      color: $secondary-color;
+      color: $primary-color;
     }
   }
 
@@ -39,7 +39,10 @@
   }
 
   .navigation-link {
+    font-size: .8em;
     color: $secondary-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     &:hover {
       color: $primary-color;
     }

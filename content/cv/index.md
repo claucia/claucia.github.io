@@ -1,5 +1,5 @@
 ---
-title: Claucia Cambruzzi
+title: Cláucia Cambruzzi
 type: page
 layout: cv
 
@@ -87,14 +87,14 @@ education:
         start: June 2021
         end: March 2022 (expected)
     - course: Introduction to programming using JavaScript
-      note: (preparation dor MTA 98-382 certification)
+      note: (preparation for MTA 98-382 certification)
       institution: Cenit college
       location: Dublin, Ireland
       dates:
         start: October 2021
         end: January 2022
     - course: Introduction to programming using HTML and CSS
-      note: (preparation dor MTA 98-383 certification)
+      note: (preparation for MTA 98-383 certification)
       institution: Cenit college
       location: Dublin, Ireland
       dates:

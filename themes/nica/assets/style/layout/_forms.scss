@@ -1,0 +1,57 @@
+input,
+textarea,
+button {
+  font-family: $primary-font-family;
+  font-size: .8em;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  border: 2px solid $secondary-color;
+  padding: 15px;
+  border-radius: 0.5rem;
+  color: $text-color;
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+  }
+}
+
+input,
+textarea {
+  width: 100%;
+  &::placeholder {
+    font-family: $primary-font-family;
+    font-size: 1em;
+  }
+}
+
+button[type="submit"] {
+  background-color: $secondary-color;
+  color: $white;
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    background-color: $primary-color;
+    color: $white;
+    border-color: $primary-color;
+  }
+  &.submitting {
+    cursor: wait;
+    font-size: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid $primary-color;
+    border-right: 2px solid $secondary-color;
+    animation: loader 0.4s linear infinite;
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

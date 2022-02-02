@@ -1,12 +1,12 @@
 baseURL: https://claucia.com/
 languageCode: en-us
-title: Claucia
+title: Cláucia
 theme: nica
-copyright: 2022 © Claucia Cambruzzi
+copyright: 2022 © Cláucia Cambruzzi
 
 params:
-  author: Claucia Cambruzzi
-  description: I am a front-end web development learner and this is my website.
+  author: Cláucia Cambruzzi
+  description: I am a front-end web development learner and this is my humble website.
   social:
     - identifier: github
       url: https://github.com/claucia
