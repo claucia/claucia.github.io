@@ -63,6 +63,11 @@
   }
 
   @media only screen and (max-width: $small-devices) {
+    
+    .navigation-bar {
+      margin-top: 1rem;
+    }
+
     .navigation-menu {
       position: fixed;
       top: 0;
@@ -74,7 +79,7 @@
       flex-direction: column;
       justify-content: start;
       text-align: center;
-      padding: 3rem;
+      padding: 4rem 3rem;
       background-color: $background;
       transition: left 0.5s ease-in-out;
       z-index: 1;
@@ -97,6 +102,7 @@
 
 @media only screen and (max-width: $small-devices) {
   
+  // Mobile menu is visible
   body.active-menu {
     overflow: hidden;
     position: fixed;
