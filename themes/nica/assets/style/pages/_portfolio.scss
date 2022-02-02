@@ -1,8 +1,8 @@
 @mixin draft-badge {
   content: "Draft";
   color: $white;
-  background-color: #e70101;
-  border: 2px solid #e70101;
+  background-color: #c50b0b;
+  border: 2px solid #c50b0b;
   padding: 4px 10px;
   border-radius: 6px;
   font-size: 0.6rem;
@@ -50,14 +50,10 @@ a.tag {
     }
   }
 
-  .foo {
-    display: grid;
-    row-gap: 1rem;
-  }
-
-  .foo-header {
+  .portfolio-page-details {
     display: grid;
     row-gap: .5rem;
+    margin-bottom: 2rem;
   }
 
   .external-link {

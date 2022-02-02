@@ -5,7 +5,6 @@ draft: true
 tags: 
   - html
   - css
-  - javascript
   - frontend-mentor
 externalLinks:
   - title: GitHub
