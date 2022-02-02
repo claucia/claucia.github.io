@@ -61,7 +61,6 @@ a {
   text-decoration: none;
   color: $secondary-color;
   transition: color 0.3s ease-in-out;
-  border-bottom: 1px solid transparent;
   &:hover {
     color: $primary-color;
     // TODO: Review this border
