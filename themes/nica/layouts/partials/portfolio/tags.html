@@ -1,7 +1,5 @@
-{{ if . }} 
-<div class="tags">
-	{{ range . }}
-	<a class="tag" href="/tags/{{. | urlize }}">{{.}}</a>
-	{{ end }}
-</div>
-{{ end }}
+<ul class="tags">
+	{{ range (.GetTerms "tags") }}
+    <li><a class="tag" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+  {{ end }}
+</ul>

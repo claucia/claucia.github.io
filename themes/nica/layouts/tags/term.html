@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="container">
+  <h1>Content with the tag "{{ .Title }}"</h1>
+  <ul>
+    {{ range .Data.Pages }}
+    <div class="card{{ if .Draft }} draft{{ end }}">
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      {{- partial "portfolio/date.html" .Date -}}
+      {{- partial "portfolio/tags.html" . -}}
+    </div>
+    {{ end }}
+  </ul>
+</div>
+{{ end}}

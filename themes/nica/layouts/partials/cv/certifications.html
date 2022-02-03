@@ -1,12 +1,20 @@
-<div class="education">
+<div class="certifications">
+
   <h2>{{ .title }}</h2>
+  
   <div class="timeline">
+    
     {{ range .content }}
     <div class="timeline-item">
+      
       <h3>{{.name}}</h3>
       <p>Issued by {{.issuer}} in {{.date}}</p>
-      <a href="{{.url}}" target="_blank"><img src="{{.badgePath}}"></a>
+      <a href="{{.url}}" target="_blank">
+        <img class="certification-badge" src="{{.badgePath}}">
+      </a>
+
     </div>
     {{ end }}
+    
   </div>
 </div>

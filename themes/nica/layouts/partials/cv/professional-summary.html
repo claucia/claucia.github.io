@@ -1,6 +1,11 @@
-<div class="summary">
-  {{ if .title }}<h2>{{ .title }}</h2>{{ end }}
+<div class="professional-summary">
+  
+  {{ if .title }}
+  <h2>{{ .title }}</h2>
+  {{ end }}
+  
   {{ range .content }}
   <p>{{ . }}</p>
   {{ end }}
+  
 </div>

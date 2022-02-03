@@ -12,8 +12,12 @@
   top: -2px;
 }
 
-.tags {
+ul.tags {
   line-height: 1.5rem;
+  list-style: none;
+  &>li {
+    display: inline;
+  }
 }
 
 a.tag {
@@ -55,7 +59,7 @@ a.tag {
 
   .cover {
     width: 100%;
-    height: 18rem;
+    height: 17rem;
     &>a {
       width: 100%;
       height: 100%;
