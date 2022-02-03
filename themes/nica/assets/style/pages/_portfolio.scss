@@ -69,7 +69,6 @@ a.tag {
 
   img {
     width: 100%;
-    height: 100%;
     display: block;
   }
 
@@ -89,6 +88,18 @@ a.tag {
   a.tag {
     pointer-events: stroke;
     color: $white;
+  }
+
+  @media screen and(max-width: $large-devices) and (min-width: $small-devices) {
+    .portfolio-gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media only screen and (max-width: $small-devices) {
+    .portfolio-gallery {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
