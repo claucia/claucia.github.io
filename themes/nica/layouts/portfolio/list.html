@@ -2,10 +2,12 @@
 
 <h1>{{ .Title }}</h1>
 
+{{ if not .Pages }}
+<p>{{ .Params.noContent }}</p>
+{{ else }}
 <div class="portfolio-gallery">
   {{ range .Pages.ByPublishDate.Reverse }}
   <div class="card{{ if .Draft }} draft{{ end }}">
-
       <div class="cover">
         <a href="{{ .RelPermalink }}">
           {{ with .Resources.GetMatch "cover" }}
@@ -13,16 +15,14 @@
           {{ end }}
         </a>
       </div>
-      
       <div class="details">
         <h3>{{ .Title }}</h3>
         {{- partial "portfolio/date.html" .Date -}}
         {{- partial "portfolio/tags.html" .Params.tags -}}
       </div>
-    
   </div>
-  {{ else }}
-  <p>{{ .Params.noContent }}</p>
   {{ end }}
 </div>
+{{ end }}
+
 {{ end }}
