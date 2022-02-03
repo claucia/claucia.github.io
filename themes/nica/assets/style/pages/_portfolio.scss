@@ -63,12 +63,12 @@ a.category {
   .portfolio-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 18rem;
-    row-gap: 1.5rem;
-    column-gap: 1.5rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
   }
 
   .card {
+    aspect-ratio: 1;
     background-color: $background;
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.16);
     position: relative;
@@ -136,7 +136,7 @@ a.category {
     .content:after {
       @include draft-badge;
       top: 0;
-      right: 0;
+      right: 1rem;
     }
   }
 
