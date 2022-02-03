@@ -38,6 +38,7 @@ menu:
 
 taxonomies:
   tag: tags
+  category: categories
 
 markup:
   goldmark:

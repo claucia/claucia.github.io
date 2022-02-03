@@ -1,5 +1,8 @@
+{{ $tags := .GetTerms "tags" }}
+{{ if $tags }}
 <ul class="tags">
-	{{ range (.GetTerms "tags") }}
+	{{ range $tags }}
     <li><a class="tag" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
   {{ end }}
 </ul>
+{{ end }}
