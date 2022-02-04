@@ -1,7 +1,7 @@
-{{ if . }} 
-<div class="external-links">
+{{ if . }}
+<ul class="external-links">
 	{{ range . }}
-	<a class="external-link" href="{{ .url }}" target="_blank">{{ .title}}</a>
+	<li><a class="external-link" href="{{ .url }}" target="_blank">{{ .title}}</a></li>
 	{{ end }}
-</div>
+</ul>
 {{ end }}
