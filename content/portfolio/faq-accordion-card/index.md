@@ -29,11 +29,13 @@ This _FAQ accordion card_ was my first challenge. The goal was get it looking as
 > - See hover states for all interactive elements on the page;
 > - Hide/show the answer to a question when the question gets clicked.  
 
-I reckon the font size is a bit too small, but I've attemted to follow the design as much as possible.
+The styles were written using SCSS. I reckon the font size is a bit too small, but I've attemted to follow the design as much as possible.
 
 To bundle the application, I picked [Parcel.js][parcel-js]. It has plenty of default configurations, which made things a lot quicker to get up and running.
 
-The styles were written using SCSS, and here is what I learned (or what I want to remember on my next projects):
+## Lessons learned
+
+Here is what I learned (or what I want to remember on my next projects):
 
 - `width: 100%`: the element is going to be 100% of the width of the parent container that got defined dimensions.
 
@@ -43,24 +45,9 @@ The styles were written using SCSS, and here is what I learned (or what I want t
 
 - To define the layout, I used Flexbox. And I would like to hightlight something nice I learned about it: When all children of a flexbox container have `flex-grow` set to `1`, then the remaining space in the container will be distributed equally to all children.
 
-```javascript
-console.log('foo');
-```
+## Screenshots
 
-```html
-<table>
-  <tr>
-    <td bgcolor="chucknorris" cellpadding="8" width="100" align="center">chuck norris</td>
-    <td bgcolor="mrt"         cellpadding="8" width="100" align="center" style="color:#ffffff">Mr T</td>
-    <td bgcolor="ninjaturtle" cellpadding="8" width="100" align="center" style="color:#ffffff">ninjaturtle</td>
-  </tr>
-  <tr>
-    <td bgcolor="sick"  cellpadding="8" width="100" align="center">sick</td>
-    <td bgcolor="crap"  cellpadding="8" width="100" align="center">crap</td>
-    <td bgcolor="grass" cellpadding="8" width="100" align="center">grass</td>
-  </tr>
-</table> 
-```
+See below some screenshots of the page:
 
 {{<
   figure src="./images/screenshot-desktop.png"
