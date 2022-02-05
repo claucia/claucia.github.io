@@ -133,9 +133,21 @@ certifications:
       date: January 2022
       url: https://www.credly.com/badges/10fb920f-be8a-4472-ab50-60ec75d413ef
       badgePath: ./images/mta-javascript.png
+      skillsMeasured:
+        - "Program with JavaScript operators, methods, and keywords: 20-25%"
+        - "Program with variables, data types, and functions: 25-30%"
+        - "Implement and analyze decisions and loops: 20-25%"
+        - "Interact with the Document Object Model: 15-20%"
+        - "Interact with HTML forms: 5-10%"
     - name: "MTA 98-383: Introduction to programming using HTML and CSS"
       issuer: Microsoft
       date: September 2021
       url: https://www.credly.com/badges/aca3416b-accf-4027-b79c-c63214241744
       badgePath: ./images/mta-html-css.png
+      skillsMeasured:
+        - "Understand HTML fundamentals: 10-15%"
+        - "Understand CSS fundamentals: 15-20%"
+        - "Structure documents using HTML: 30-35%"
+        - "Present multimedia using HTML: 10-15%"
+        - "Style web pages using CSS: 20-25%"
 ---

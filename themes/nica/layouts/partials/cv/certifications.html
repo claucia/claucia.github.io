@@ -9,6 +9,12 @@
       
       <h3>{{.name}}</h3>
       <p>Issued by {{.issuer}} in {{.date}}</p>
+      <ul>
+        {{ range .skillsMeasured }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+
       <a href="{{.url}}" target="_blank">
         <img class="certification-badge" src="{{.badgePath}}">
       </a>
