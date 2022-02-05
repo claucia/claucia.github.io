@@ -17,7 +17,7 @@ externalLinks:
   - title: Live demo
     url: TODO
   - title: Frontend Mentor
-    url: TODO
+    url: https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX
 ---
 
 TODO
