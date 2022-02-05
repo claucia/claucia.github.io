@@ -6,7 +6,6 @@ categories:
   - Frontend Mentor
 tags: 
   - HTML
-  - CSS
   - SCSS
 resources:
   - name: cover
