@@ -138,20 +138,20 @@ a.category {
 }
 
 .page.portfolio {
-
-  ul {
-    li {
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
   
   &.draft {
     .content:after {
       @include draft-badge;
       top: 0;
       right: 1rem;
+    }
+  }
+
+  ul {
+    li {
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -201,6 +201,12 @@ a.category {
       font-size: .8rem;
       font-weight: 400;
       margin-top: 0.5rem;
+    }
+  }
+
+  @media only screen and (max-width: $small-devices) {
+    ul {
+      margin-left: 0;
     }
   }
 }
