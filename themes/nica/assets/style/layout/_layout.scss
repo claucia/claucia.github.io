@@ -57,41 +57,14 @@ a {
   }
 }
 
-ul {
-  list-style: outside;
-  margin-left: 1rem;
-  li {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
 blockquote {
   border-left: 5px solid $secondary-color;
   padding: 1rem;
   background-color: rgba($primary-color, .08);
-  margin-bottom: 1rem;
-  ul {
-    margin-left: 0;
-  }
 }
 
 code, pre {
   font-size: .8rem;
   // TODO: Move to a variable
   font-family: Consolas, Monaco, Menlo, 'Andale Mono', 'Ubuntu Mono', monospace;
-}
-
-.highlight {
-  margin-bottom: 1rem;
-  pre.chroma {
-    width: 100%;
-    overflow: auto;
-    padding: 1rem;
-    background-color: rgba($primary-color, .08);
-    > code {
-       word-break: break-word;
-       white-space: pre;
-    }
-  }
 }

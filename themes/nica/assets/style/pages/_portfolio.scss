@@ -147,14 +147,6 @@ a.category {
     }
   }
 
-  ul {
-    li {
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
   .portfolio-page-details {
     display: grid;
     row-gap: .5rem;
@@ -190,23 +182,66 @@ a.category {
     }
   }
 
-  figure {
-    margin: 2rem 0;
-    text-align: center;
-    >img {
-      max-width: 100%;
-      border-radius: 20px;
+  .portfolio-page-content {
+
+    ul {
+      list-style: outside;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      li {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
-    h4 {
-      font-size: .8rem;
-      font-weight: 400;
-      margin-top: 0.5rem;
+
+    blockquote {
+      margin-bottom: 1rem;
+      ul {
+        margin-left: 0;
+      }
+    }
+
+    figure {
+      margin-bottom: 2rem;
+      text-align: center;
+      >img {
+        max-width: 100%;
+        border-radius: 20px;
+      }
+      h4 {
+        font-size: .8rem;
+        font-weight: 400;
+        margin-top: 0.5rem;
+      }
+    }
+
+    * {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media only screen and (max-width: $small-devices) {
+      ul {
+        margin-left: 0;
+      }
     }
   }
 
-  @media only screen and (max-width: $small-devices) {
-    ul {
-      margin-left: 0;
+  .highlight {
+    margin-bottom: 1rem;
+    pre.chroma {
+      width: 100%;
+      overflow: auto;
+      padding: 1rem;
+      background-color: rgba($primary-color, .08);
+      > code {
+        word-break: break-word;
+        white-space: pre;
+      }
     }
   }
 }
