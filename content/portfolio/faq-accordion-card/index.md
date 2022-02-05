@@ -13,9 +13,9 @@ resources:
     src: images/cover.png
 externalLinks:
   - title: GitHub
-    url: https://github.com/claucia/faq-accordion-card
+    url: https://github.com/claucia/frontend-mentor-faq-accordion-card
   - title: Live demo
-    url: https://claucia.com/faq-accordion-card/
+    url: https://claucia.com/frontend-mentor-faq-accordion-card/
   - title: Frontend Mentor
     url: https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam
 ---
