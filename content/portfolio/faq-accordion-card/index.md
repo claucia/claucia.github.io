@@ -20,7 +20,6 @@ externalLinks:
     url: https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam
 ---
 
-
 I believe that learning by practicing is the best way to learn. With that in mind, I found an interesting way to get hands-on to real-world projects to acquire experience: [Frontend Mentor challenges][frontend-mentor-challenges].
 
 This _FAQ accordion card_ was my first challenge. The goal was get it looking as close as possible to the design provided, keeping in mind that the users should be able to:
