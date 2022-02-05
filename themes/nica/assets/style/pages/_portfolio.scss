@@ -149,18 +149,32 @@ a.category {
     }
   }
 
-  .portfolio-page-details {
+  .portfolio-page-header {
     display: grid;
-    row-gap: .5rem;
+    grid-template-columns: 12rem 2fr;
+    column-gap: 1rem;
     margin-bottom: 2rem;
+    >img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.16);
+    }
+  }
+
+  .portfolio-page-details {
   }
 
   .date {
+    display: block;
     font-size: .8rem;
+    margin-bottom: .5rem;
+  }
+
+  .taxonomy {
+    margin-bottom: .5rem;
   }
 
   .external-links {
-    margin: 1rem 0 0 0;
     list-style: none;
     &>li {
       margin: 0;
@@ -253,6 +267,15 @@ a.category {
         word-break: break-word;
         white-space: pre;
       }
+    }
+  }
+
+ @media only screen and (max-width: $small-devices) {
+    .portfolio-page-header {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+      row-gap: 1rem;
     }
   }
 }

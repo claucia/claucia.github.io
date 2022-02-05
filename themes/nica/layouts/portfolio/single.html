@@ -1,12 +1,16 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
-
-<section class="portfolio-page-details">
-  {{- partial "portfolio/date.html" .Date -}}
-  {{- partial "portfolio/taxonomy.html" . -}}
-  {{- partial "portfolio/external-links.html" .Params.externalLinks -}}
-</section>
+<div class="portfolio-page-header">
+  {{ with .Resources.GetMatch "cover" }}
+  <img src="{{ .RelPermalink }}">
+  {{ end }}
+  <section class="portfolio-page-details">
+    <h1>{{ .Title }}</h1>
+    {{- partial "portfolio/date.html" .Date -}}
+    {{- partial "portfolio/taxonomy.html" . -}}
+    {{- partial "portfolio/external-links.html" .Params.externalLinks -}}
+  </section>
+</div>
 
 <section class="portfolio-page-content">
 {{ .Content }}

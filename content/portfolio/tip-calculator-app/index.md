@@ -10,7 +10,7 @@ tags:
   - JavaScript
 resources:
   - name: cover
-    src: TODO
+    src: images/placeholder.png
 externalLinks:
   - title: GitHub
     url: TODO
