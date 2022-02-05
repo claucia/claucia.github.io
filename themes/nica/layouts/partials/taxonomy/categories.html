@@ -1,0 +1,10 @@
+{{ $categories := .Site.Taxonomies.categories }}
+{{ if $categories }}
+<ul class="categories">
+  {{ range $categories }}
+  <li><a class="category" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+  {{ end }}
+</ul>
+{{ else }}
+Oops... Looks like there are no categories.
+{{ end }}

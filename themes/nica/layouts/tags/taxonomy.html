@@ -1,8 +1,4 @@
 {{ define "main" }}
 <h1>Tags</h1>
-<ul>
-{{ range .Site.Taxonomies.tags }}
-    <li><a class="tag" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
-{{ end }}
-</ul>
+{{- partial "taxonomy/tags.html" . -}}
 {{ end }}

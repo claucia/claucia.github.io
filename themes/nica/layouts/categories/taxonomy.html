@@ -1,8 +1,4 @@
 {{ define "main" }}
 <h1>Categories</h1>
-<ul>
-    {{ range .Site.Taxonomies.categories }}
-    <li><a class="category" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
-    {{ end }}
-</ul>
+{{- partial "taxonomy/categories.html" . -}}
 {{ end }}

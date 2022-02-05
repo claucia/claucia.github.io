@@ -1,0 +1,10 @@
+{{ $tags := .Site.Taxonomies.tags }}
+{{ if $tags }}
+<ul class="tags">
+  {{ range $tags }}
+  <li><a class="tag" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+  {{ end }}
+</ul>
+{{ else }}
+Oops... Looks like there are no tags.
+{{ end }}

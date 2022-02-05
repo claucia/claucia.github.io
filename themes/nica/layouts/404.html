@@ -1,5 +1,10 @@
 {{ define "main"}}
   <h1>Oops...</h1>
   <p>Looks like the page you are looking for cannot be found.
-  <a href="{{ "/" | relURL }}">Go home :)</a></h1>
+  {{ if .Site.Taxonomies.tags }}
+  <p>Navigate to the <a href="{{ "/" | relURL }}">home page</a> or find some content using the tags below:</p>
+  {{- partial "taxonomy/tags.html" . -}}
+  {{ else }}
+  <p>Navigate to the <a href="{{ "/" | relURL }}">home page</a>.</p>
+  {{ end }}  
 {{ end }}
