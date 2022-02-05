@@ -27,7 +27,9 @@ This _FAQ accordion card_ was my first challenge. The goal was get it looking as
 
 > - View the optimal layout for the component depending on their device’s screen size.
 > - See hover states for all interactive elements on the page;
-> - Hide/show the answer to a question when the question gets clicked.
+> - Hide/show the answer to a question when the question gets clicked.  
+
+I reckon the font size is a bit too small, but I've attemted to follow the design as much as possible.
 
 To bundle the application, I picked [Parcel.js][parcel-js]. It has plenty of default configurations, which made things a lot quicker to get up and running.
 
@@ -45,7 +47,7 @@ The styles were written using SCSS, and here is what I learned (or what I want t
 console.log('foo');
 ```
 
-<!-- ```html
+```html
 <table>
   <tr>
     <td bgcolor="chucknorris" cellpadding="8" width="100" align="center">chuck norris</td>
@@ -58,7 +60,7 @@ console.log('foo');
     <td bgcolor="grass" cellpadding="8" width="100" align="center">grass</td>
   </tr>
 </table> 
-```-->
+```
 
 {{<
   figure src="./images/screenshot-desktop.png"
