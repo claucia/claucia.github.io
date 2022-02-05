@@ -7,7 +7,7 @@ professionalSummary:
   title:
   content:
     - I am a motivated professional, seeking a new opportunity. I hold a bachelor’s degree in biomedical science, what helped me to develop excellent analytical, strong attention to detail, and communication skills. I’m fluent in both English and Portuguese, and I can also communicate in Italian. 
-    - Recently, during a layoff from work due to the COVID-19 restrictions, aiming to develop new skills, I started studying Web technologies such as HTML, CSS, SASS, and JavaScript. I also obtained certifications from Microsoft to assert these skills. Currently, to expand my skillset, I am studying digital marketing via the Future in Tech initiative.
+    - Recently, during a layoff from work due to the COVID-19 restrictions, aiming to develop new skills, I started studying Web technologies such as HTML, CSS/SCSS, and JavaScript. I also obtained certifications from Microsoft to assert these skills. Currently, to expand my skillset, I am studying digital marketing via the Future in Tech initiative.
     - I live in Dublin, and I hold an EU citizenship, what entitles me to work in the EU/EEA.
 
 professionalExperience:
@@ -21,7 +21,7 @@ professionalExperience:
         start:  March 2020 
         end: Present
       description:
-        - Studying HTML, CSS, SASS, and JavaScript on my own using online resources, and with the mentorship of a professional developer. Recently obtained certifications from Microsoft to assert these skills.
+        - Studying HTML, CSS/SCSS, and JavaScript on my own using online resources, and with the mentorship of a professional developer. Recently obtained certifications from Microsoft to assert these skills.
         - Learning the fundaments of the HTTP protocol, including client-server model, request methods and response status codes.
         - Practicing for obtaining experience and publishing code on GitHub.
         - Studying digital marketing via the Future in Tech initiative.
@@ -108,7 +108,7 @@ education:
       dates:
         start: January 2021
         end: May 2021
-    - course: Modern HTML & CSS from the beginning including SASS
+    - course: Modern HTML & CSS from the beginning including Sass
       note: 
       institution: Online course by Udemy
       url: https://www.udemy.com/course/modern-html-css-from-the-beginning
