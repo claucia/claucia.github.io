@@ -2,7 +2,9 @@
 
 <div class="portfolio-page-header">
   {{ with .Resources.GetMatch "cover" }}
-  <img src="{{ .RelPermalink }}">
+  <img class="cover-image" src="{{ .RelPermalink }}">
+  {{ else }}
+  <div class="cover-image">Cover image not configured!</div>
   {{ end }}
   <section class="portfolio-page-details">
     <h1>{{ .Title }}</h1>

@@ -2,7 +2,9 @@
     <div class="cover">
       <a href="{{ .RelPermalink }}">
         {{ with .Resources.GetMatch "cover" }}
-        <img src="{{ .RelPermalink }}">
+        <img class="cover-image" src="{{ .RelPermalink }}">
+        {{ else }}
+        <div class="cover-image">Cover image not configured!</div>
         {{ end }}
       </a>
     </div>
