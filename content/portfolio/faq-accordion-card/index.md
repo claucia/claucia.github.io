@@ -45,7 +45,7 @@ The styles were written using SCSS, and here is what I learned (or what I want t
 console.log('foo');
 ```
 
-```html
+<!-- ```html
 <table>
   <tr>
     <td bgcolor="chucknorris" cellpadding="8" width="100" align="center">chuck norris</td>
@@ -57,8 +57,8 @@ console.log('foo');
     <td bgcolor="crap"  cellpadding="8" width="100" align="center">crap</td>
     <td bgcolor="grass" cellpadding="8" width="100" align="center">grass</td>
   </tr>
-</table>
-```
+</table> 
+```-->
 
 {{<
   figure src="./images/screenshot-desktop.png"

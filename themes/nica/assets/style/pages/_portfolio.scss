@@ -14,11 +14,13 @@
 
 ul.tags,
 ul.categories {
+  margin: 0;
   display: inline;
   line-height: 1.5rem;
   list-style: none;
   &>li {
     display: inline;
+    margin: 0;
   }
 }
 
@@ -136,6 +138,14 @@ a.category {
 }
 
 .page.portfolio {
+
+  ul {
+    li {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
   
   &.draft {
     .content:after {
@@ -156,9 +166,10 @@ a.category {
   }
 
   .external-links {
-    margin-top: 1rem;
+    margin: 1rem 0 0 0;
     list-style: none;
     &>li {
+      margin: 0;
       display: inline;
       &:after {
         content: '•';
