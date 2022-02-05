@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h1>Content with the tag "{{ .Title }}"</h1>
+<h1>Content with the category "{{ .Title }}"</h1>
 <ul>
   {{ range .Data.Pages }}
   <div class="card{{ if .Draft }} draft{{ end }}">
