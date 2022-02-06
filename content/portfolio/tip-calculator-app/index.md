@@ -1,6 +1,6 @@
 ---
 title: Tip calculator app
-date: 2022-02-05T22:35:00Z
+date: 2022-02-05T22:35:00Z # TODO: Update date
 draft: true
 categories:
   - Frontend Mentor
@@ -10,14 +10,14 @@ tags:
   - JavaScript
 resources:
   - name: cover
-    src: images/placeholder.png
+    src: images/placeholder.png # TODO: Add proper cover image
 externalLinks:
   - title: GitHub
-    url: TODO
+    url: http://example.org # TODO: Update GitHub URL
   - title: Live demo
-    url: TODO
+    url: http://example.org # TODO: Update live demo URL
   - title: Frontend Mentor
     url: https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX
 ---
 
-TODO
+TODO: Add some awesome content here
