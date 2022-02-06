@@ -48,13 +48,13 @@ Here is what I learned (or what I want to remember on my next projects):
 See below some screenshots of the page:
 
 {{<
-  figure src="./images/screenshot-desktop.png"
+  figure src="images/screenshot-desktop.png"
   title="Screenshot of page on desktop"
   alt="Screenshot of page on desktop"
 >}}
 
 {{<
-  figure src="./images/screnshot-mobile.png"
+  figure src="images/screnshot-mobile.png"
   title="Screenshot of page on mobile"
   alt="Screenshot of page on mobile"
 >}}
