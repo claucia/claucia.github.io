@@ -31,7 +31,7 @@ The styles were written using SCSS. I reckon the font size is a bit too small, b
 
 Theres's a tiny bit of JavaScript to show/hide the content of the answers.
 
-To bundle the application, I picked [Parcel.js][parcel-js]. I attempted to use [webpack], but I found it a bit too complex to get started, so I will revisit webpack in the future. On the other hand, Parcel.js has plenty of default configurations, which made things a lot quicker to get up and running.
+To bundle the application, I picked [Parcel.js][parcel-js]. I attempted to use [webpack], but I found it a bit too complex to get started, so I plan to revisit webpack in the future. On the other hand, Parcel.js has plenty of default configurations, which made things a lot quicker to get up and running.
 
 By the way, several things I've done for setting up this project can be reused for my next projects. With this in mind, I created [`web-app-template-parceljs`][app-template]. So I don't need to start a new project from the scratch every time.
 
