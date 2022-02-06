@@ -31,7 +31,7 @@ The styles were written using SCSS. I reckon the font size is a bit too small, b
 
 Theres's a tiny bit of JavaScript to show/hide the content of the answers.
 
-To bundle the application, I picked [Parcel.js][parcel-js]. It has plenty of default configurations, which made things a lot quicker to get up and running.
+To bundle the application, I picked [Parcel.js][parcel-js]. I attempted to use [webpack], but I found it a bit too complex to get started, so I will revisit webpack in the future. On the other hand, Parcel.js has plenty of default configurations, which made things a lot quicker to get up and running.
 
 By the way, several things I've done for setting up this project can be reused for my next projects. With this in mind, I created [`web-app-template-parceljs`][app-template]. So I don't need to start a new project from the scratch every time.
 
@@ -43,7 +43,7 @@ Here is what I learned (or what I want to remember on my next projects):
 
 - `position: relative`: position an element _relatively_ to its normal position in the document flow. Then we can use `top`, `bottom`, `left`, and `right` to offset the element.
 
-- `position: absolute`: the element is removed from the normal document flow, and no space is created for the element in the page layout. And the funny thing that causes confusion: despite the name it's positioned _relatively_ to its closest positioned ancestor, if any exist. If none exist, it's positioned relatively to the document.
+- `position: absolute`: the element is removed from the normal document flow, and no space is created for the element in the page layout. And the funny thing that causes confusion: despite the name it's positioned _relatively_ to its closest positioned ancestor, if any exist. Otherwise it's positioned relatively to the document.
 
 - To define the layout, I used Flexbox. And I would like to hightlight something nice I learned about it: When all children of a flexbox container have `flex-grow` set to `1`, then the remaining space in the container will be distributed equally to all children.
 
@@ -66,3 +66,4 @@ See below some screenshots of the page:
 [frontend-mentor-challenges]: https://www.frontendmentor.io/challenges
 [parcel-js]: https://parceljs.org
 [app-template]: https://github.com/claucia/web-app-template-parceljs
+[webpack]: https://webpack.js.org/
