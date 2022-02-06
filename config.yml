@@ -32,11 +32,16 @@ menu:
       title: CV
       url: /cv/
       weight: 20
+    - identifier: about
+      name: About
+      title: About
+      url: /about/
+      weight: 30
     - identifier: contact
       name: Contact
       title: Contact
       url: /contact/
-      weight: 30
+      weight: 40
 
 taxonomies:
   tag: tags

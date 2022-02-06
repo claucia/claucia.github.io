@@ -64,6 +64,20 @@ blockquote {
   background-color: rgba($primary-color, .08);
 }
 
+figure {
+  margin-bottom: 2rem;
+  text-align: center;
+  >img {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+  h4 {
+    font-size: .8rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+  }
+}
+
 code, pre {
   font-size: .8rem;
   font-family: $code-font;
