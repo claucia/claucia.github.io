@@ -33,7 +33,7 @@ Theres's a tiny bit of JavaScript to show/hide the content of the answers.
 
 To bundle the application, I picked [Parcel.js][parcel-js]. It has plenty of default configurations, which made things a lot quicker to get up and running.
 
-By the way, several things I've done for setting up this project can be reused for my next projects. With this in mind, I created [`web-app-template-parceljs`][app-template]. So I don't need to start from the scratch every time.
+By the way, several things I've done for setting up this project can be reused for my next projects. With this in mind, I created [`web-app-template-parceljs`][app-template]. So I don't need to start a new project from the scratch every time.
 
 ## Lessons learned
 
