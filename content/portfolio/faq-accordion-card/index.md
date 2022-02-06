@@ -19,9 +19,9 @@ externalLinks:
     url: https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam
 ---
 
-I believe that learning by practicing is the best way to learn. With that in mind, I found an interesting way to get hands-on to real-world projects to acquire experience: [Frontend Mentor challenges][frontend-mentor-challenges].
+I believe that learning by practicing is the best way to learn. With that in mind, I found an interesting way to get some hands-on experience: [Frontend Mentor challenges][frontend-mentor-challenges].
 
-This _FAQ accordion card_ was my first challenge. The goal was get it looking as close as possible to the design provided, keeping in mind that the users should be able to:
+This _FAQ accordion card_ was my first challenge. The goal was get it looking as close as possible to the design provided, allowing the users to:
 
 > - View the optimal layout for the component depending on their device’s screen size.
 > - See hover states for all interactive elements on the page;
@@ -29,7 +29,11 @@ This _FAQ accordion card_ was my first challenge. The goal was get it looking as
 
 The styles were written using SCSS. I reckon the font size is a bit too small, but I've attemted to follow the design as much as possible.
 
+Theres's a tiny bit of JavaScript to show/hide the content of the answers.
+
 To bundle the application, I picked [Parcel.js][parcel-js]. It has plenty of default configurations, which made things a lot quicker to get up and running.
+
+By the way, several things I've done for setting up this project can be reused for my next projects. With this in mind, I created [`web-app-template-parceljs`][app-template]. So I don't need to start from the scratch every time.
 
 ## Lessons learned
 
@@ -61,3 +65,4 @@ See below some screenshots of the page:
 
 [frontend-mentor-challenges]: https://www.frontendmentor.io/challenges
 [parcel-js]: https://parceljs.org
+[app-template]: https://github.com/claucia/web-app-template-parceljs
