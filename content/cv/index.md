@@ -6,25 +6,35 @@ layout: cv
 professionalSummary: 
   title:
   content:
-    - I am a motivated professional, seeking a new opportunity. I hold a bachelor’s degree in biomedical science, what helped me to develop excellent analytical, strong attention to detail, and communication skills. I’m fluent in both English and Portuguese, and I can also communicate in Italian. 
-    - Recently, during a layoff from work due to the COVID-19 restrictions, aiming to develop new skills, I started studying Web technologies such as HTML, CSS/SCSS, and JavaScript. I also obtained certifications from Microsoft to assert these skills. Currently, to expand my skillset, I am studying digital marketing via the Future in Tech initiative.
+    - I am a motivated professional, seeking a new opportunity. I hold a bachelor’s degree in biomedical science, what helped me to develop excellent analytical, strong attention to detail, and communication skills. I’m fluent in both English and Portuguese. 
+    - During a layoff from work due to the COVID-19 restrictions, aiming to develop new skills, I started studying tools such as Affinity Designer, and web technologies including HTML, CSS, SASS, and JavaScript. I also obtained certifications from Microsoft to assert these skills. Currently, to expand my skillset and obtain experience, I am working on projects to build my portfolio.
     - I live in Dublin, and I hold an EU citizenship, what entitles me to work in the EU/EEA.
 
 professionalExperience:
   title: Professional experience
   content:
+    - title: Supervisor
+      company: Primark (via Gather & Gather)
+      location: Dublin, Ireland
+      dates:
+        start: February 2022 
+        end: Present
+      description:
+        - Working as interim barista, being responsible for the coffee bar.
+        - Taking orders, preparing, and serving hot drinks, aiming for a great customer satisfaction.
+        - Performing inventory and stock management, ensuring that the bar is well-stock with minimal waste.
     - title: Layoff from work 
       note: (Due to the COVID-19 restrictions)
       company: 
       location: Dublin, Ireland
       dates:
         start:  March 2020 
-        end: Present
+        end: February 2022
       description:
-        - Studying HTML, CSS/SCSS, and JavaScript on my own using online resources, and with the mentorship of a professional developer. Recently obtained certifications from Microsoft to assert these skills.
-        - Learning the fundaments of the HTTP protocol, including client-server model, request methods and response status codes.
-        - Practicing for obtaining experience and publishing code on GitHub.
-        - Studying digital marketing via the Future in Tech initiative.
+        - Studied HTML, CSS, SASS, and JavaScript on my own using online resources, and with the mentorship of a professional developer. Recently obtained certifications from Microsoft to assert these skills.
+        - Developed skills with tools such as Affinity Designer (alternative to Illustrator).
+        - Learned the fundaments of the HTTP protocol, including client-server model, request methods and response status codes.
+        - Practiced for obtaining experience, and published code on GitHub.
     - title: Supervisor
       company: Primark (via Gather & Gather) 
       location: Dublin, Ireland
@@ -78,14 +88,6 @@ professionalExperience:
 education:
   title: Education
   content:
-    - course: Professional diploma in digital marketing
-      note: 
-      institution: Digital marketing institute
-      url: 
-      location: Dublin, Ireland
-      dates:
-        start: June 2021
-        end: March 2022 (expected)
     - course: Introduction to programming using JavaScript
       note: (preparation for MTA 98-382 certification)
       institution: Cenit college
