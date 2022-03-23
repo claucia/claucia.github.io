@@ -1,7 +1,7 @@
 ---
 title: FAQ accordion card
 date: 2022-01-24T21:15:39Z
-draft: true
+draft: false
 categories:
   - Frontend Mentor
 tags: 
@@ -27,7 +27,7 @@ This _FAQ accordion card_ was my first challenge. The goal was get it looking as
 > - See hover states for all interactive elements on the page;
 > - Hide/show the answer to a question when the question gets clicked.  
 
-The styles were written using SCSS. I reckon the font size is a bit too small, but I've attemted to follow the design as much as possible.
+The styles were written using SCSS. I reckon the font size is a bit too small, but I've attempted to follow the design as much as possible.
 
 Theres's a tiny bit of JavaScript to show/hide the content of the answers.
 
