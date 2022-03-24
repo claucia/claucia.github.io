@@ -34,7 +34,7 @@ button {
     border-color: $primary-color;
   }
 
-  button[type="submit"] {
+  &[type="submit"] {
     &.submitting {
       cursor: wait;
       font-size: 0;
