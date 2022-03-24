@@ -21,15 +21,17 @@
   .timeline-item {
     position: relative;
     margin: 0 0 1.5rem 2rem;
+    break-inside: avoid;
     &:before {
       content: " ";
       position: absolute;
       display: block;
-      left: -52px;
-      background-color: $primary-color;
-      width: 25px;
-      height: 25px;
+      left: -54px;
+      height: 0;
+      width: 0;
       border-radius: 100%;
+      // Use border instead of background-color to ensure it will show up when printing
+      border: 15px solid #575f6b;
     }
     &>p {
       margin-bottom: 0rem;
