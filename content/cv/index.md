@@ -7,7 +7,7 @@ professionalSummary:
   title:
   content:
     - I am a motivated professional, seeking a new opportunity. I hold a bachelor’s degree in biomedical science, what helped me to develop excellent analytical, strong attention to detail, and communication skills. I’m fluent in both English and Portuguese. 
-    - During a layoff from work due to the COVID-19 restrictions, aiming to develop new skills, I started studying web technologies including HTML, CSS, SASS, and JavaScript. I also obtained certifications from Microsoft to assert these skills. Currently, to expand my skillset and obtain experience, I am working on projects to build my portfolio.
+    - During a layoff from work due to the COVID-19 restrictions, aiming to develop new skills, I started studying web technologies including HTML, CSS/SCSS, and JavaScript. I also obtained certifications from Microsoft to assert these skills. Currently, to expand my skillset and obtain experience, I am working on projects to build my portfolio.
     - I live in Dublin, and I hold an EU citizenship, what entitles me to work in the EU/EEA.
 
 professionalExperience:
