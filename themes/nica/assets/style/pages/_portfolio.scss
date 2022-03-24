@@ -12,55 +12,60 @@
   pointer-events: none;
 }
 
-ul.tags,
-ul.categories {
-  margin: 0;
-  display: inline;
-  line-height: 1.5rem;
-  margin-right: 5px;
-  list-style: none;
-  &>li {
-    display: inline;
+@mixin tags {
+  
+  ul.tags,
+  ul.categories {
     margin: 0;
+    display: inline;
+    line-height: 1.5rem;
     margin-right: 5px;
-    &:last-child {
-      margin-right: 0;
+    list-style: none;
+    &>li {
+      display: inline;
+      margin: 0;
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  a.tag,
+  a.category {
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    transition: all .3s ease-in-out;
+  }
+
+  a.tag {
+    color: $secondary-color;
+    border-color: $secondary-color;
+    &:hover {
+      background-color: $secondary-color;
+      color: $white;
+    }
+  }
+
+  a.category {
+    color: $primary-color;
+    border-color: $primary-color;
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
     }
   }
 }
 
-a.tag,
-a.category {
-  border-width: 2px;
-  border-style: solid;
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 0.7rem;
-  white-space: nowrap;
-  transition: all .3s ease-in-out;
-}
+main.term.tags,
+main.term.categories,
+main.section.portfolio {
 
-a.tag {
-  color: $secondary-color;
-  border-color: $secondary-color;
-  &:hover {
-    background-color: $secondary-color;
-    color: $white;
-  }
-}
-
-a.category {
-  color: $primary-color;
-  border-color: $primary-color;
-  &:hover {
-    background-color: $primary-color;
-    color: $white;
-  }
-}
-
-.term.tags,
-.term.categories,
-.section.portfolio {
+  @include tags();
   
   .card.draft {
     &:after {
@@ -158,7 +163,9 @@ a.category {
   }
 }
 
-.page.portfolio {
+main.page.portfolio {
+
+  @include tags();
   
   &.draft {
     .content:after {

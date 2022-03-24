@@ -20,13 +20,6 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-.content {
-  padding: 0 1rem;
-  max-width: 1100px;
-  width: 100vw;
-  position: relative;
-}
-
 h1,
 h2,
 h3,
@@ -81,4 +74,19 @@ figure {
 code, pre {
   font-size: .8rem;
   font-family: $code-font;
+}
+
+header > .content,
+main > .content,
+footer > .content {
+  padding: 0 1rem;
+  max-width: 1100px;
+  width: 100vw;
+  position: relative;
+}
+
+@media only print {
+  a {
+    color: $primary-color;
+  }
 }

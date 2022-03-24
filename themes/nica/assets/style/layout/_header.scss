@@ -102,6 +102,16 @@
       z-index: 2;
     }
   }
+
+  @media only print {
+    .navigation-menu {
+      display: none;
+    }
+    &> .content {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: $small-devices) {

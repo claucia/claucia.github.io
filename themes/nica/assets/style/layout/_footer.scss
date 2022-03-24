@@ -59,4 +59,11 @@
       margin: 0;
     }
   }
+
+  @media only print {
+    .navigation-menu,
+    .social-link {
+      display: none;
+    }
+  }
 }

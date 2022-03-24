@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
   {{- partial "head.html" . -}}
+
   <body>
 
     {{- partial "header/header.html" . -}}
-      
+
+    {{/* CSS classes to add to the body */}}
     {{ $classes := slice }}
+
+    {{/* Page kind and type */}}
     {{ $classes = $classes | append .Page.Kind }}
     {{ $classes = $classes | append .Page.Type }}
     
+    {{/* Is page? */}}
     {{ if eq .Page.Kind "page" }}
       {{ $classes = $classes | append (path.Base .Page.Permalink) }}
     {{ end }}
 
+    {{/* Is draft? */}}
     {{ if .Page.Draft }}
       {{ $classes = $classes | append "draft" }}
     {{ end }}
-    
-    <main class='{{ delimit (uniq $classes) " " }}'>
+
+    {{/* Remove duplicates and join values with blank space */}}
+    {{ $classesAsString := delimit (uniq $classes) " " }}
+  
+    <main class='{{ $classesAsString }}'>
       <div class="content">
         {{- block "main" . }}{{- end }}
       </div>
