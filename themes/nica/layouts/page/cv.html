@@ -3,8 +3,8 @@
 <h1>{{ .Title }}</h1>
 
 {{- partial "cv/professional-summary.html" .Params.professionalSummary -}}
-{{- partial "cv/professional-experience.html" .Params.professionalExperience -}}
 {{- partial "cv/education.html" .Params.education -}}
+{{- partial "cv/professional-experience.html" .Params.professionalExperience -}}
 {{- partial "cv/certifications.html" .Params.certifications -}}
 
 {{ end }}
