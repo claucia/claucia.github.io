@@ -7,7 +7,8 @@ professionalSummary:
   title:
   content:
     - I am a motivated professional, seeking a new opportunity. I hold a bachelor’s degree in biomedical science, what helped me to develop excellent analytical, strong attention to detail, and communication skills. I’m fluent in both English and Portuguese. 
-    - During a layoff from work due to the COVID-19 restrictions, aiming to develop new skills, I started studying web technologies including HTML, CSS/SCSS, and JavaScript. I also obtained certifications from Microsoft to assert these skills. Currently, to expand my skillset and obtain experience, I am working on projects to build my portfolio.
+    - During a layoff from work due to the COVID-19 restrictions, aiming to develop new skills, I started studying web technologies including HTML, CSS/SCSS, and JavaScript. I also obtained certifications from Microsoft to assert these skills.
+    - To learn more about programming, I am enrolled in the CS50x course provided by HarvardX via edX. To expand my skillset and obtain experience, I am working on projects to build my portfolio. And my next goal is to learn React, and improve my skills in UI/UX.
     - I live in Dublin, and I hold an EU citizenship, what entitles me to work in the EU/EEA.
 
 professionalExperience:
@@ -88,7 +89,7 @@ professionalExperience:
 education:
   title: Education
   content:
-    - course: "CS50: Introduction to Computer Science"
+    - course: "CS50x: Introduction to Computer Science"
       institution: HarvardX via edX
       url: https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
       location: Dublin, Ireland
