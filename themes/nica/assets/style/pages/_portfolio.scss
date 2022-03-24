@@ -17,10 +17,15 @@ ul.categories {
   margin: 0;
   display: inline;
   line-height: 1.5rem;
+  margin-right: 5px;
   list-style: none;
   &>li {
     display: inline;
     margin: 0;
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 

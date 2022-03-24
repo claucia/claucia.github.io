@@ -1,8 +1,8 @@
 {{ $categories := .GetTerms "categories" }}
-{{ if $categories }}
+{{- if $categories -}}
 <ul class="categories">
-	{{ range $categories }}
-    <li><a class="category" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-  {{ end }}
+  {{- range $categories -}}
+  <li><a class="category" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+  {{- end -}}
 </ul>
-{{ end }}
+{{- end -}}
