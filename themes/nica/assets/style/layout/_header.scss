@@ -18,6 +18,10 @@
     letter-spacing: 1px;
   }
 
+  .page-url-print {
+    display: none;
+  }
+
   .navigation-menu {
     margin: 0;
     display: flex;
@@ -104,12 +108,15 @@
   }
 
   @media only print {
+    
+    padding: 0;
+
+    .page-url-print {
+      display: block;
+    }
+
     .navigation-menu {
       display: none;
-    }
-    &> .content {
-      width: 100%;
-      max-width: 100%;
     }
   }
 }

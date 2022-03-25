@@ -161,6 +161,13 @@ main.section.portfolio {
       grid-template-columns: 1fr;
     }
   }
+
+  @media only print {
+    .card {
+      box-shadow: none;
+      border: 2px solid rgba($primary-color, .08);
+    }
+  }
 }
 
 main.page.portfolio {
@@ -230,6 +237,13 @@ main.page.portfolio {
     margin-right: 1rem;
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+  @media only print {
+    .cover-image {
+      box-shadow: none;
+      border: 2px solid rgba($primary-color, .08);
     }
   }
 

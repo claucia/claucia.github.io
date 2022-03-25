@@ -1,5 +1,6 @@
 <nav class="navigation-bar">
   <a href="/" class="navigation-logo">{{ .Site.Title }}</a>
+  {{- partial "page-url-print.html" . -}}
   <ul class="navigation-menu">
     {{ range .Site.Menus.main }}
     <li class="navigation-item">

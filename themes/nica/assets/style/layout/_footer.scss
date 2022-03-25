@@ -52,8 +52,16 @@
     }
   }
 
+  .page-url-print,
   .copyright {
     font-size: 0.7rem;
+  }
+
+  .page-url-print {
+    display: none;
+  }
+
+  .copyright {
     text-align: center;
     > p {
       margin: 0;
@@ -61,10 +69,31 @@
   }
 
   @media only print {
+
     padding-bottom: 0;
+
+    .footer-items {
+      display: flex;
+    }
+
     .navigation-menu,
     .social-link {
       display: none;
+    }
+
+    .page-url-print,
+    .copyright {
+      line-height: 1rem;
+      display: inline;
+      flex-grow: 1;
+    }
+
+    .page-url-print {
+      text-align: left;
+    }
+
+    .copyright {
+      text-align: right;
     }
   }
 }

@@ -1,0 +1,3 @@
+{{/* URL displayed when printing */}}
+{{/* Remove 'http://', 'https://' and trailing slash */}}
+<span class="page-url-print">{{ replaceRE "^https?://|/$" "" .Page.Permalink }}</span>

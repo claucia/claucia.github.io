@@ -86,7 +86,46 @@ footer > .content {
 }
 
 @media only print {
+
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  html {
+    font-size: .75rem;
+  }
+  
   a {
     color: $primary-color;
+  }
+
+  // Hacky solution to prevent page break immediately after a heading
+  // https://stackoverflow.com/a/53742871
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    break-inside: avoid;
+  }
+  h1::after,
+  h2::after,
+  h3::after,
+  h4::after,
+  h5::after,
+  h6::after {
+    content: "";
+    display: block;
+    height: 12rem;
+    margin-bottom: -12rem;
+  }
+
+  header > .content,
+  main > .content,
+  footer > .content {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }

@@ -19,9 +19,6 @@ main {
   }
 
   @media only print {
-    &> .content {
-      width: 100%;
-      max-width: 100%;
-    }
+    padding-top: 5rem;
   }
 }
