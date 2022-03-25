@@ -22,8 +22,9 @@ Finally, feel free to [reach out][contact] if you feel like doing so.
 
 {{<
   figure src="images/comic.png"
-  title="A lovely comic from workchronicles.com"
-  alt="A lovely comic from workchronicles.com"
+  title="A lovely comic from workchronicles.com which I can relate"
+  alt="A lovely comic from workchronicles.com which I can relate"
+  class="comic"
 >}}
 
 [cv]: /cv/
