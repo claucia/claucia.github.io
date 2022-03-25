@@ -60,6 +60,7 @@ blockquote {
 figure {
   margin-bottom: 2rem;
   text-align: center;
+  break-inside: avoid;
   >img {
     max-width: 100%;
     border-radius: 20px;
@@ -89,13 +90,13 @@ footer > .content {
 
   @page {
     size: A4;
-    margin: 15mm;
+    margin: 20mm;
   }
 
   html {
     font-size: .75rem;
   }
-  
+
   a {
     color: $primary-color;
   }
@@ -125,6 +126,7 @@ footer > .content {
   header > .content,
   main > .content,
   footer > .content {
+    padding: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
   }
