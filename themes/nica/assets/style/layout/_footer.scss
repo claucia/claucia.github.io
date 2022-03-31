@@ -18,6 +18,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: .5rem;
   }
 
   .social-link {
@@ -27,6 +28,10 @@
     &:hover {
       color: $primary-color;
     }
+  }
+
+  .navigation {
+    margin-bottom: .5rem;
   }
 
   .navigation-menu {
@@ -42,7 +47,6 @@
   }
 
   .navigation-link {
-    font-size: .8em;
     color: $secondary-color;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -54,7 +58,7 @@
 
   .page-url-print,
   .copyright {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .page-url-print {
