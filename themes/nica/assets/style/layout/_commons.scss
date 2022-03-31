@@ -14,8 +14,7 @@
 
 @mixin tags {
   
-  ul.tags,
-  ul.categories {
+  ul.tags {
     margin: 0;
     display: inline;
     line-height: 2rem;
@@ -31,8 +30,7 @@
     }
   }
 
-  a.tag,
-  a.category {
+  a.tag {
     border-width: 2px;
     border-style: solid;
     padding: 5px;
@@ -40,22 +38,10 @@
     font-size: .8rem;
     white-space: nowrap;
     transition: all .3s ease-in-out;
-  }
-
-  a.tag {
     color: $secondary-color;
     border-color: $secondary-color;
     &:hover {
       background-color: $secondary-color;
-      color: $white;
-    }
-  }
-
-  a.category {
-    color: $primary-color;
-    border-color: $primary-color;
-    &:hover {
-      background-color: $primary-color;
       color: $white;
     }
   }

@@ -2,9 +2,8 @@
 title: FAQ accordion card
 date: 2022-01-24T21:15:39Z
 draft: false
-categories:
+tags:
   - Frontend Mentor
-tags: 
   - HTML
   - SCSS
 resources:

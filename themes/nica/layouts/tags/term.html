@@ -1,10 +1,8 @@
 {{ define "main" }}
-<h1>Content with the tag "{{ .Title }}"</h1>
-
+<h1>Content with tag <span class="tag">{{ .Title }}</span></h1>
 <div class="portfolio-gallery">
   {{ range .Data.Pages.ByPublishDate.Reverse }}
     {{- partial "portfolio/card.html" . -}}
   {{ end }}
 </div>
-
 {{ end}}

@@ -2,9 +2,8 @@
 title: Tip calculator app
 date: 2022-02-05T22:35:00Z # TODO: Update date
 draft: true
-categories:
+tags:
   - Frontend Mentor
-tags: 
   - HTML
   - SCSS
   - JavaScript

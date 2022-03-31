@@ -1,5 +1,4 @@
 main.term.tags,
-main.term.categories,
 main.section.portfolio {
 
   @include tags();
@@ -88,8 +87,7 @@ main.section.portfolio {
     font-size: .9rem;
   }
 
-  a.tag,
-  a.category {
+  a.tag {
     pointer-events: stroke;
   }
 
@@ -103,6 +101,21 @@ main.section.portfolio {
     .card {
       box-shadow: none;
       border: 2px solid rgba($primary-color, .08);
+    }
+  }
+}
+
+main.term.tags {
+  h1 {
+    &>span.tag {
+      border: 2px solid $primary-color;
+      color: $primary-color;
+      padding: .25rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      top: -.1rem;
+      left: .2rem;
+      position: relative;
     }
   }
 }
