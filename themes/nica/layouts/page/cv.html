@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
+<h1>{{ .Site.Params.author }}</h1>
 
 {{- partial "cv/professional-summary.html" .Params.professionalSummary -}}
 {{- partial "cv/education.html" .Params.education -}}

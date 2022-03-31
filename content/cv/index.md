@@ -1,5 +1,5 @@
 ---
-title: Cláucia Cambruzzi
+title: CV
 type: page
 layout: cv
 
