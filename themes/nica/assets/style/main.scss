@@ -3,6 +3,8 @@
 
 @import "layout/layout";
 @import "layout/forms";
+@import "layout/commons";
+
 @import "layout/header";
 @import "layout/main";
 @import "layout/footer";
@@ -12,5 +14,6 @@
 @import "pages/cv";
 @import "pages/about";
 @import "pages/contact";
+@import "pages/404";
 
 @import "syntax-highlight/github";

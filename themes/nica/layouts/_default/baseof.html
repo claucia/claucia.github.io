@@ -6,22 +6,36 @@
 
     {{- partial "header/header.html" . -}}
 
-    {{/* CSS classes to add to the body */}}
+    {{/* CSS classes to add to the main element */}}
     {{ $classes := slice }}
-
-    {{/* Page kind and type */}}
-    {{ $classes = $classes | append .Page.Kind }}
-    {{ $classes = $classes | append .Page.Type }}
     
+    {{/* Is section? */}}
+    {{ if eq .Page.Kind "section" }}
+      {{ $classes = $classes | append "section" }}
+    {{ end }}
+
+    {{/* Page kind: page, home, section, taxonomy, term, 404 */}}
     {{/* Is page? */}}
-    {{ if eq .Page.Kind "page" }}
-      {{ $classes = $classes | append (path.Base .Page.Permalink) }}
+    {{ if eq .Page.Kind "page" }} 
+      {{ $classes = $classes | append "page" }}      
+      {{ $classes = $classes | append (path.Base .Page.Permalink) }}  
+    
+    {{/* Is 404? */}}
+    {{ else if eq .Page.Kind "404" }} 
+      {{ $classes = $classes | append "_404" }}
+    
+    {{/* Everything else */}}
+    {{ else }} 
+      {{ $classes = $classes | append .Page.Kind }}
     {{ end }}
 
     {{/* Is draft? */}}
     {{ if .Page.Draft }}
       {{ $classes = $classes | append "draft" }}
     {{ end }}
+
+    {{/* Page type */}}
+    {{ $classes = $classes | append .Page.Type }}
 
     {{/* Remove duplicates and join values with blank space */}}
     {{ $classesAsString := delimit (uniq $classes) " " }}
