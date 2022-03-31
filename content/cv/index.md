@@ -82,7 +82,7 @@ professionalExperience:
         start: August 2013
         end: April 2015
       description:
-        - Conducted laboratory tests in the areas of serology, immunology, haematology, coagulation, urinalysis and biochemical.
+        - Conducted laboratory tests in the areas of serology, immunology, haematology, coagulation, urinalysis, and biochemical.
         - Recorded, reported, and monitored all data for quality control.
         - Calibrated and troubleshot laboratory devices to ensure accurate test results.
         - Documented all maintenance and technical problems according to the protocol defined by the laboratory.  
