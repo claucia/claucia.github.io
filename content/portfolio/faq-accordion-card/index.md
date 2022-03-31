@@ -14,7 +14,7 @@ externalLinks:
   - title: GitHub
     url: https://github.com/claucia/frontend-mentor-faq-accordion-card
   - title: Live demo
-    url: https://claucia.com/frontend-mentor-faq-accordion-card/
+    url: https://claucia-frontend-mentor-faq-accordion-card.netlify.app
   - title: Frontend Mentor
     url: https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam
 ---
