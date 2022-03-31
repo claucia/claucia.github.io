@@ -88,4 +88,13 @@ main.page.cv {
       margin-left: 1rem;
     }
   }
+
+  @media only print {
+
+    .timeline-item {
+      &:before {
+        left: -2.7rem;
+      }
+    }
+  }
 }
