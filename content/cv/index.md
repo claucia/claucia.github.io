@@ -43,7 +43,8 @@ professionalExperience:
         start:  September 2019 
         end: March 2020
       description:
-        - Supervised a team of 8+ people at the canteen, ensuring that the highest quality standards on the catering services were met with great customer service. Also ensured that the health and safety standards were met and upheld by the team.
+        - Supervised a team of 8+ people at the canteen, ensuring that the highest quality standards on the catering services were met with great customer service. 
+        - Ensured that the health and safety standards were met and upheld by the team.
         - Performed administrative tasks such as creating and managing team rosters, training new hires, evaluating performance of the team members, providing feedback, and managing inventory.
     - title: Barista
       company: Bank of Ireland (via Compass Group) 
