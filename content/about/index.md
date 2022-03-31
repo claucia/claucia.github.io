@@ -12,7 +12,7 @@ I moved to Ireland in mid-2018 and, since then I've been [working][cv] on hospit
 
 This website was created to show off my skills. Very soon there will be some content in the [portfolio] section!
 
-I strongly believe that learning by practicing is the best way to learn. With that in mind, I found an interesting way to get some hands-on experience: [Frontend Mentor challenges][frontend-mentor-challenges]. There's a huge collection of challenges to choose from. Then I download the design files, and I write the HTML, CSS and JavaScript for it.
+I strongly believe that learning by practicing is the best way to learn. With that in mind, I found an interesting way to get some hands-on experience: [Frontend Mentor challenges][frontend-mentor-challenges]. There's a huge collection of challenges to choose from. Then I download the design files, and I write the HTML, CSS, and JavaScript for it.
 
 Ah! I am looking for a position as web developer. Please bear in mind I'm still learning, and I acknowledge I still have a lot to learn. Learning is a never-ending exercise, isn't it?
 
