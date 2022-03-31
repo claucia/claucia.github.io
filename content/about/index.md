@@ -4,7 +4,7 @@ type: page
 layout: about
 ---
 
-Hi there! My name is Cláucia Cambruzzi and this is my website.
+Hi there! My name is Cláucia Cambruzzi and this is my humble website.
 
 I am originally from Brazil, and I descend from an Italian family. Well, I reckon my name is not easy to pronounce, so you could simply call me _Nica_, which is my nickname. My family and close friends call me like that since I was a child :)
 
