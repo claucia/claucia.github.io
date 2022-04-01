@@ -49,16 +49,6 @@
     &:hover {
       color: $primary-color;
     }
-    &:after {
-      content: '';
-      display: block;
-      border-bottom: 2px solid $primary-color;
-      width: 0;
-      transition: width 0.3s ease-in-out;
-    }
-    &:hover:after {
-      width: 100%;
-    }
   }
 
   .hamburger {
