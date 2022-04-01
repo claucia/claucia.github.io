@@ -1,5 +1,5 @@
 @import "config";
-@import "layout/breakpoints";
+@import "breakpoints";
 
 @import "layout/layout";
 @import "layout/forms";
@@ -9,11 +9,13 @@
 @import "layout/main";
 @import "layout/footer";
 
-@import "pages/home";
-@import "pages/portfolio";
-@import "pages/cv";
+@import "pages/404";
 @import "pages/about";
 @import "pages/contact";
-@import "pages/404";
+@import "pages/cv";
+@import "pages/home";
+@import "pages/portfolio-collection";
+@import "pages/portfolio-single";
+@import "pages/tags";
 
 @import "syntax-highlight/github";
