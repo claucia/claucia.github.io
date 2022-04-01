@@ -5,7 +5,7 @@
 {{ if not .Pages }}
 <p>{{ .Params.noContent }}</p>
 {{ else }}
-<div class="portfolio-gallery">
+<div class="card-gallery">
   {{ range .Pages.ByPublishDate.Reverse }}
     {{- partial "portfolio/card.html" . -}}
   {{ end }}

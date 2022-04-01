@@ -15,7 +15,7 @@ main.section.portfolio {
     }
   }
 
-  .portfolio-gallery {
+  .card-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
@@ -96,7 +96,7 @@ main.section.portfolio {
   }
 
   @media only screen and (max-width: $small-devices) {
-    .portfolio-gallery {
+    .card-gallery {
       grid-template-columns: 1fr;
     }
   }
