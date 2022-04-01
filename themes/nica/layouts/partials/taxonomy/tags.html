@@ -1,11 +1,10 @@
 {{ $tags := .Site.Taxonomies.tags }}
 {{ if $tags }}
-<p>Here are some tags you can you to browse the content:</p>
 <ul class="tags">
   {{ range $tags }}
   <li><a class="tag" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
   {{ end }}
 </ul>
 {{ else }}
-<p>Oops... Looks like there are no tags yet.</p>
+<p>Oops... Looks like there are no tags.</p>
 {{ end }}
