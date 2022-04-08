@@ -29,7 +29,7 @@ professionalExperience:
       company: 
       location: Dublin, Ireland
       dates:
-        start:  March 2020 
+        start: March 2020 
         end: February 2022
       description:
         - Studied HTML, CSS, SASS, and JavaScript on my own using online resources, and with the mentorship of a professional developer. 
@@ -40,7 +40,7 @@ professionalExperience:
       company: Primark (via Gather & Gather) 
       location: Dublin, Ireland
       dates:
-        start:  September 2019 
+        start: September 2019 
         end: March 2020
       description:
         - Supervised a team of 8+ people at the canteen, ensuring that the highest quality standards on the catering services were met with great customer service. 
@@ -50,7 +50,7 @@ professionalExperience:
       company: Bank of Ireland (via Compass Group) 
       location: Dublin, Ireland
       dates:
-        start:  August 2018 
+        start: August 2018 
         end: September 2019
       description:
         - Prepared and served several types of coffee, always ensuring the highest level of quality and customer satisfaction.
@@ -60,8 +60,8 @@ professionalExperience:
       company: 
       location: Lombardy, Italy
       dates:
-        start: August 2018 
-        end: September 2019
+        start: March 2017 
+        end: June 2018
       description:
         - Researched, collected, and reviewed historic documents required for the Italian citizenship recognition (jus sanguinis, by bloodline).
         - Successfully assisted more than 70 clients to have their Italian citizenship recognized.
