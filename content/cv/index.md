@@ -6,24 +6,27 @@ layout: cv
 professionalSummary: 
   title:
   content:
-    - I am a motivated professional, seeking a new opportunity. I hold a bachelor’s degree in biomedical science, what helped me to develop excellent analytical and communication skills, along with attention to details. I’m fluent in both English and Portuguese.  
-    - During a layoff from work due to the COVID-19 restrictions, aiming to develop new skills, I started studying web technologies including HTML, CSS/SCSS, and JavaScript. I also obtained certifications from Microsoft to assert these skills.
-    - To learn more about programming, I am enrolled in the CS50x course provided by HarvardX via edX. To expand my skillset and obtain experience, I am working on projects to build my portfolio. And my next goal is to learn React, and improve my skills in UI/UX.
-    - I live in Dublin, and I hold an EU citizenship, what entitles me to work in the EU/EEA.
+    - I am a motivated professional, seeking a new opportunity, and willing to go the extra mile to support people. I hold a bachelor’s degree in biomedical science, what helped me to develop excellent analytical and communication skills, and strong attention to detail.  
+    - During a layoff from work due to the COVID-19 restrictions, aiming to develop new skills, I started studying computer programming, and web technologies, including HTML, CSS, SASS, and JavaScript. I also obtained certifications from Microsoft to assert these skills. 
+    - To learn more about computer programming, I am taking the CS50x course provided by HarvardX via edX. And to expand my skillset and obtain experience, I am working on projects to build my portfolio.
+    - I live in Dublin, and I hold an EU citizenship, what entitles me to work in the EU/EEA. I am fluent in both English and Portuguese.
 
 professionalExperience:
   title: Professional experience
   content:
-    - title: Supervisor
+    - title: Catering Supervisor
       company: Primark (via Gather & Gather)
       location: Dublin, Ireland
       dates:
         start: February 2022 
         end: Present
       description:
-        - Working as interim barista, being responsible for the coffee bar.
-        - Taking orders, preparing, and serving hot drinks, aiming for a great customer satisfaction.
-        - Performing inventory and stock management, ensuring that the bar is well-stock with minimal waste.
+        - Reviewing details of invoices, making sure that they are correct, and then approving them to be paid.
+        - Maintaining and archiving physical administrative records, so that they are promptly available when needed.
+        - Performing inventory and stock management, and ordering new supplies as required.
+        - Monitoring the quality of the products and services, along with ensuring that the health and safety regulations are strictly observed.
+        - Keeping track of end of the day sales and performing month-end reporting.
+        - On-boarding and training new staff members.
     - title: Layoff from work 
       note: (Due to the COVID-19 restrictions)
       company: 
@@ -34,17 +37,16 @@ professionalExperience:
       description:
         - Studied HTML, CSS, SASS, and JavaScript on my own using online resources, and with the mentorship of a professional developer. 
         - Obtained certifications from Microsoft (MTA 98-382 & MTA 98-383) to assert these skills.
-        - Learned the fundaments of the HTTP protocol, including client-server model, request methods and response status codes.
+        - Learned the fundaments of the HTTP protocol, including client-server model, request methods, and response status codes.
         - Practiced for obtaining experience, and published code on GitHub.
-    - title: Supervisor
+    - title: Catering Supervisor
       company: Primark (via Gather & Gather) 
       location: Dublin, Ireland
       dates:
         start: September 2019 
         end: March 2020
       description:
-        - Supervised a team of 8+ people at the canteen, ensuring that the highest quality standards on the catering services were met with great customer service. 
-        - Ensured that the health and safety standards were met and upheld by the team.
+        - Supervised a team of 8+ people at the canteen, ensuring that the highest quality standards on the catering services were met with great customer service. Also ensured that the health and safety standards were met and upheld by the team. 
         - Performed administrative tasks such as creating and managing team rosters, training new hires, evaluating performance of the team members, providing feedback, and managing inventory.
     - title: Barista
       company: Bank of Ireland (via Compass Group) 
@@ -53,7 +55,7 @@ professionalExperience:
         start: August 2018 
         end: September 2019
       description:
-        - Prepared and served several types of coffee, always ensuring the highest level of quality and customer satisfaction.
+        - Received orders, prepared, and served hot drinks, aiming for a great customer satisfaction.
         - Handled cash and card payments using the point of sale till system.
         - Increased the sales by 10% after improving the disposition of the products, ensuring that they were properly displayed and accessible to the customers. 
     - title: Independent consultant & cultural mediator
@@ -96,7 +98,7 @@ education:
       location: Dublin, Ireland
       dates:
         start: February 2022
-        end: May 2022 (expected)
+        end: August 2022 (expected)
     - course: Introduction to programming using JavaScript
       note: (preparation for MTA 98-382 certification)
       institution: Cenit college
